@@ -23,3 +23,7 @@ export const registerSchema = object({
     .max(32, "Name must be less than 32 characters"),
 })
 
+export const resSchema = object({
+  respuesta: string({ required_error: "Debes responder" })
+    .min(1, "Respuesta es requerida"),
+})
