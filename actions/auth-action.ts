@@ -10,11 +10,30 @@ import bcrypt from "bcryptjs"
 // TODO: Las credenciales tienen que validar el ID también, mira el user de prueba en auth.config.ts
 export const loginAction = async (values: z.infer<typeof loginSchema>) => {
   try {
-    await signIn("credentials", {
+    // Verificar si el usuario existe
+    const user = await db.user.findUnique({
+      where: {
+        email: values.email
+      }
+    })
+
+    if (!user) {
+      return {
+        error: "User does not exist"
+      }
+    }
+
+    //Intentar iniciar sesión
+    const result = await signIn("credentials", {
       email: values.email,
       password: values.password,
       redirect: false
     })
+
+    if (result?.error) {
+      return { error: result.error }
+    }
+
     return { success: true }
   } catch (error) {
     if (error instanceof AuthError) {

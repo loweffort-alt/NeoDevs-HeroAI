@@ -17,6 +17,7 @@ import { Input } from "@/components/ui/input"
 import { loginAction } from "@/actions/auth-action"
 import { useState, useTransition } from "react"
 import { useRouter } from "next/navigation"
+import { Loader2 } from "lucide-react"
 
 const FormLogin = () => {
   const [error, setError] = useState<string | null>(null)
@@ -77,7 +78,18 @@ const FormLogin = () => {
           {
             error && <FormMessage> {error} </FormMessage>
           }
-          <Button type="submit" disabled={isPending}>Submit</Button>
+          <Button type="submit" disabled={isPending}>
+            {
+              isPending ?
+                <>
+                  <Loader2 className="animate-spin" />
+                  Please wait :(
+                </> :
+                <>
+                  Submit
+                </>
+            }
+          </Button>
         </form>
       </Form>
     </div>
