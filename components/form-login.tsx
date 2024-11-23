@@ -30,10 +30,10 @@ const FormLogin = () => {
   }
 
   return (
-    <div className="grid items-center h-screen text-white font-4">
+    <div className="grid items-center h-screen font-4">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 w-72 m-auto flex flex-col justify-center">
-          <h1 className="text-5xl text-center font-4 lh-6 ld-04 font-bold text-white mb-6">Sign In</h1>
+          <h1 className="text-5xl text-center font-4 lh-6 ld-04 font-bold mb-6">Sign In</h1>
           <FormField
             control={form.control}
             name="email"
@@ -60,7 +60,7 @@ const FormLogin = () => {
               </FormItem>
             )}
           />
-          <Button className="text-black" type="submit">Submit</Button>
+          <Button type="submit">Submit</Button>
         </form>
       </Form>
     </div>
