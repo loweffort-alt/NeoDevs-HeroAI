@@ -83,7 +83,7 @@ const FormLogin = () => {
               isPending ?
                 <>
                   <Loader2 className="animate-spin" />
-                  Please wait :(
+                  Please wait
                 </> :
                 <>
                   Submit

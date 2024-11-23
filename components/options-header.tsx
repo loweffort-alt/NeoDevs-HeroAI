@@ -13,7 +13,7 @@ const OptionsHeader = () => {
         <Link href="/dashboard" className="md:mr-11 cursor-pointer text-gray-300 hover:text-white font-semibold tr04 max-md:text-3xl">
           Dashboard
         </Link>
-        <Link href="/" className="md:mr-11 cursor-pointer text-gray-300 hover:text-white font-semibold tr04 max-md:text-3xl">
+        <Link href="#about" className="md:mr-11 cursor-pointer text-gray-300 hover:text-white font-semibold tr04 max-md:text-3xl">
           About us
         </Link>
         <Link

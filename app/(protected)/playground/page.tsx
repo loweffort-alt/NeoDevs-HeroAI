@@ -1,13 +1,16 @@
 import { auth } from '@/auth'
 import LogoutButton from '@/components/logout-button'
+import { redirect } from 'next/navigation'
 
 const PlaygroundPage = async () => {
   const session = await auth()
 
   if (!session) {
-    return (
-      <div>NO PERMITIDO, NO TIENES SESION</div>
-    )
+    redirect("/login")
+    // return (
+    //
+    //   <div>NO PERMITIDO, NO TIENES SESION</div>
+    // )
   }
 
   return (

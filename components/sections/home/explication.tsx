@@ -3,7 +3,7 @@ import React from 'react'
 const Explication = () => {
   return (
     <>
-      <h2 className="pt-40 mb-1 text-2xl font-semibold tracking-tighter text-center lg:text-7xl md:text-6xl">
+      <h2 id="learn" className="pt-40 mb-1 text-2xl font-semibold tracking-tighter text-center lg:text-7xl md:text-6xl">
         ¿Tomar notas es suficiente para <span className='text-blue-800'>aprender</span>?
       </h2>
       <br></br>
