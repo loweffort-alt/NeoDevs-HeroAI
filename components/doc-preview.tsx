@@ -26,7 +26,7 @@ function loadingDoc() {
   )
 }
 
-const DocPreview = () => {
+const DocPreview = ({ url }) => {
   const [numPages, setNumPages] = useState<number>();
   const [pageNumber, setPageNumber] = useState<number>(1);
 
@@ -38,7 +38,7 @@ const DocPreview = () => {
     <div
       className="h-full w-full rounded-xl overflow-auto overflow-x-hidden relative"
     >
-      <Document noData={noDoc} loading={loadingDoc} file="/1.pdf" onLoadSuccess={onDocumentLoadSuccess}>
+      <Document noData={noDoc} loading={loadingDoc} file={url} onLoadSuccess={onDocumentLoadSuccess}>
         {Array.apply(null, Array(numPages))
           .map((x, i) => i + 1)
           .map((page, index) => {

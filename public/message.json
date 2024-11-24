@@ -1,0 +1,154 @@
+{
+  "questions": [
+    {
+      "question_id": "450a62a0-9615-45b8-95a7-04dea59ef00e",
+      "chunk_id": "537a6a69-eeb9-4342-84ef-204be4ea7ff0",
+      "question_dict": {
+        "question": "¿Cuál es la distancia media de la Tierra al Sol?",
+        "options": [
+          "148.59 millones de kilómetros",
+          "149.59 millones de kilómetros",
+          "150.59 millones de kilómetros",
+          "151.59 millones de kilómetros"
+        ],
+        "correct_answer": "149.59 millones de kilómetros"
+      },
+      "reference_page": 0
+    },
+    {
+      "question_id": "be138129-7e1d-42b9-b161-bcf09cdcb57f",
+      "chunk_id": "a8722f6a-abf0-4371-92f5-82221073d061",
+      "question_dict": {
+        "question": "¿Cuál es una de las principales diferencias entre la corteza oceánica y la corteza continental?",
+        "options": [
+          "La corteza oceánica es mucho más antigua que la corteza continental.",
+          "La corteza oceánica tiene un grosor promedio de 20 a 50 km.",
+          "La corteza oceánica se renueva constantemente, mientras que la continental no.",
+          "La corteza continental está compuesta principalmente de hierro fundido."
+        ],
+        "correct_answer": "La corteza oceánica se renueva constantemente, mientras que la continental no."
+      },
+      "reference_page": 4
+    },
+    {
+      "question_id": "5abeb901-adba-46ef-932a-a81ce3d6fb7d",
+      "chunk_id": "c69a91eb-da96-4093-a7a3-e89da0a287b7",
+      "question_dict": {
+        "question": "¿Cuál es el enfoque principal de la investigación de Antony Brian?",
+        "options": [
+          "La astronomía de los planetas gaseosos",
+          "La geología de los planetas terrestres",
+          "La astrobiología de Marte",
+          "Las misiones espaciales a Venus"
+        ],
+        "correct_answer": "La geología de los planetas terrestres"
+      },
+      "reference_page": 8
+    },
+    {
+      "question_id": "fe6f2792-3549-47cb-8985-461bdd3b19ec",
+      "chunk_id": "e9a5846b-515a-433d-9f49-7d5d8d623144",
+      "question_dict": {
+        "question": "¿Qué proceso describe la separación de materiales más pesados que se hunden hacia el centro de la Tierra durante su formación?",
+        "options": [
+          "Acreción",
+          "Diferenciación",
+          "Condensación",
+          "Erosión"
+        ],
+        "correct_answer": "Diferenciación"
+      },
+      "reference_page": 2
+    },
+    {
+      "question_id": "cd3dc898-1952-4793-8981-2430f3182f0a",
+      "chunk_id": "0cfedb63-42fe-4b12-ab2e-65c991dd2d3f",
+      "question_dict": {
+        "question": "¿Cuál es la definición del geoid según el texto?",
+        "options": [
+          "La forma irregular del planeta Tierra.",
+          "La forma que asumiría la Tierra si estuviera completamente hecha de líquido.",
+          "La superficie sólida de la Tierra.",
+          "Un tipo de montaña formada por placas tectónicas."
+        ],
+        "correct_answer": "La forma que asumiría la Tierra si estuviera completamente hecha de líquido."
+      },
+      "reference_page": 6
+    },
+    {
+      "question_id": "d6733004-8f2a-4a0c-9178-4632a3c5f7ab",
+      "chunk_id": "ff4006b0-c174-4460-967f-3cc3d1f29501",
+      "question_dict": {
+        "question": "¿Cuál es la característica principal de las ondas superficiales en comparación con las ondas S?",
+        "options": [
+          "Las ondas superficiales se mueven más rápido que las ondas S.",
+          "Las ondas superficiales viajan a lo largo de la superficie de la Tierra.",
+          "Las ondas superficiales son reflejadas en el mismo punto que las ondas S.",
+          "Las ondas superficiales son el único tipo de onda en la Tierra."
+        ],
+        "correct_answer": "Las ondas superficiales viajan a lo largo de la superficie de la Tierra."
+      },
+      "reference_page": 2
+    },
+    {
+      "question_id": "507c1bef-5212-43ac-a0f7-762b4387c291",
+      "chunk_id": "05bf0bdc-af05-49e9-8814-84e2c5e304e6",
+      "question_dict": {
+        "question": "¿Cuál es el planeta que tiene la mayor media de temperatura superficial según el fragmento presentado?",
+        "options": [
+          "Tierra",
+          "Mercurio",
+          "Venus",
+          "Marte"
+        ],
+        "correct_answer": "Venus"
+      },
+      "reference_page": 2
+    },
+    {
+      "question_id": "979ab0cf-7cb2-40d8-811d-e9fc92f3c07a",
+      "chunk_id": "fdf12276-3e97-4997-8507-6a188095acb5",
+      "question_dict": {
+        "question": "¿Cuál de los siguientes planetas es el más grande y denso de los planetas terrestres?",
+        "options": [
+          "Mercurio",
+          "Venus",
+          "Tierra",
+          "Marte"
+        ],
+        "correct_answer": "Tierra"
+      },
+      "reference_page": 0
+    },
+    {
+      "question_id": "570ba272-0516-428b-a854-af22f50a7481",
+      "chunk_id": "a157f7f2-e9b9-43aa-9deb-0753c2029d82",
+      "question_dict": {
+        "question": "¿Qué tipo de límite se forma donde las placas tectónicas se deslizan entre sí en direcciones opuestas?",
+        "options": [
+          "Límites de divergencia",
+          "Zonas de fractura",
+          "Límites de convergencia",
+          "Zonas de subducción"
+        ],
+        "correct_answer": "Zonas de fractura"
+      },
+      "reference_page": 5
+    },
+    {
+      "question_id": "1d5989e4-eefd-4610-b8c5-20d3e8b26a3d",
+      "chunk_id": "79c9f578-38e1-4b6b-8c63-0f092e4472f4",
+      "question_dict": {
+        "question": "¿Qué ha revelado el seguimiento satelital sobre la Tierra en relación con los altos y bajos geoidales?",
+        "options": [
+          "Los altos corresponden a acumulaciones de rocas menos densas.",
+          "Los bajos corresponden a concentraciones de rocas densas.",
+          "Los altos corresponden a concentraciones de rocas densas y los bajos a rocas menos densas.",
+          "Ambos altos y bajos corresponden a la misma densidad de rocas."
+        ],
+        "correct_answer": "Los altos corresponden a concentraciones de rocas densas y los bajos a rocas menos densas."
+      },
+      "reference_page": 7
+    }
+  ]
+}

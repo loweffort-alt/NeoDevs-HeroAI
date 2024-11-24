@@ -6,13 +6,11 @@ import {
   type FileState,
 } from '@/components/ui/multi-file-dropzone';
 import { useEdgeStore } from '@/lib/edgestore';
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
-interface MultiFileDropzoneUsageProps {
-  onLoadComplete: () => void
-}
-
-const MultiFileDropzoneUsage: React.FC<MultiFileDropzoneUsageProps> = ({ onLoadComplete }) => {
+const MultiFileDropzoneUsage = () => {
+  const router = useRouter()
   const username = useAuth()
   const [fileStates, setFileStates] = useState<FileState[]>([]);
   const [urls, setUrls] = useState<string[]>([])
@@ -55,15 +53,18 @@ const MultiFileDropzoneUsage: React.FC<MultiFileDropzoneUsageProps> = ({ onLoadC
                   }
                 },
               });
-              console.log("subido")
+              console.log("subido completamente")
               localStorage.setItem(`${index}`, res.url)
             } catch (err) {
               updateFileProgress(addedFileState.key, 'ERROR');
             }
           }),
         );
+        // Redirigir a la URL
         await new Promise((complete) => setTimeout(complete, 2000))
-        onLoadComplete()
+        const firstUrl = localStorage.getItem("0")
+        const newUrl = "/playground/" + firstUrl
+        router.push(newUrl)
       }}
     />
   );
