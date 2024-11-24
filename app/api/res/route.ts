@@ -1,27 +1,42 @@
 // import { NextResponse } from "next/server";
 const urlBackend = "https://hero-ai-backend.onrender.com/process-pdf/"
-const urlPdf = "https://stgacc777.blob.core.windows.net/docs/Uranus.pdf"
 
-export async function GET() {
-  const data = await import("../../../public/backend-example.json")
-  // const res = await fetch(urlBackend, {
-  //   method: "POST", // Método POST
-  //   headers: {
-  //     "Content-Type": "application/json", // Define el tipo de contenido como JSON
-  //   },
-  //   body: JSON.stringify({
-  //     pdf_url: urlPdf, // Envía la URL del PDF en el cuerpo
-  //   }),
-  // });
-  //
-  // // Manejo de la respuesta
-  // if (!res.ok) {
-  //   throw new Error(`Error en la solicitud: ${res.status} - ${res.statusText}`);
-  // }
-  //
-  // const data = await res.json()
+export async function POST(request) {
+  try {
+    const { url } = await request.json()
 
-  return Response.json({ data })
+    if (!url) {
+      return new Response(
+        JSON.stringify({ error: "El campo 'pdf_url' es requerido" }),
+        { status: 400 }
+      );
+    }
+
+    const res = await fetch(urlBackend, {
+      method: "POST", // Método POST
+      headers: {
+        "Content-Type": "application/json", // Define el tipo de contenido como JSON
+      },
+      body: JSON.stringify({
+        pdf_url: url, // Envía la URL del PDF en el cuerpo
+      }),
+    });
+
+    // Manejo de la respuesta
+    if (!res.ok) {
+      throw new Error(`Error en la solicitud: ${res.status} - ${res.statusText}`);
+    }
+
+    const data = await res.json()
+
+    return Response.json({ data })
+  } catch (error) {
+    console.error("Error procesando la solicitud:", error);
+    return new Response(
+      JSON.stringify({ error: "Hubo un problema al procesar la solicitud" }),
+      { status: 500 }
+    );
+  }
 }
 
 // export async function POST() {
@@ -82,11 +97,11 @@ export async function GET() {
 
 
 
-export async function POST() {
-  const res = {
-    "text": "you are an amazing writer!",
-    "translation": "¡qanqa admirakuypaq qillqaqmi kanki!"
-  }
-
-  return Response.json({ res })
-}
+// export async function POST() {
+//   const res = {
+//     "text": "you are an amazing writer!",
+//     "translation": "¡qanqa admirakuypaq qillqaqmi kanki!"
+//   }
+//
+//   return Response.json({ res })
+// }

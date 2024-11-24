@@ -54,7 +54,7 @@ const MultiFileDropzoneUsage = () => {
                 },
               });
               console.log("subido completamente")
-              localStorage.setItem(`${index}`, res.url)
+              localStorage.setItem(`docUrl`, res.url)
             } catch (err) {
               updateFileProgress(addedFileState.key, 'ERROR');
             }
@@ -62,7 +62,7 @@ const MultiFileDropzoneUsage = () => {
         );
         // Redirigir a la URL
         await new Promise((complete) => setTimeout(complete, 2000))
-        const firstUrl = localStorage.getItem("0")
+        const firstUrl = localStorage.getItem("docUrl")
         const newUrl = "/playground/" + firstUrl
         router.push(newUrl)
       }}

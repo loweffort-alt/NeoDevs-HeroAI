@@ -39,10 +39,23 @@ const QuestionsSection = () => {
     }
   }, [isReady])
 
+
   function getBackendResponse() {
+    const documentUrl = localStorage.getItem("docUrl")
+
     startTransition(async () => {
       try {
-        const response = await fetch("/api/res")
+        const response = await fetch("/api/res", {
+          method: "POST", // Cambiado a POST para enviar datos
+          headers: {
+            "Content-Type": "application/json", // Encabezado necesario para JSON
+          },
+          body: JSON.stringify({
+            url: documentUrl, // Envía el docUrl como pdf_url
+          }),
+        });
+
+
         if (!response.ok) {
           throw new Error(`Error: ${response.statusText}`)
         }
