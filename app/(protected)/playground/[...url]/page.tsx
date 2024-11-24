@@ -3,8 +3,9 @@
 import { useEffect, useRef, useState } from 'react'
 import '../styles.css'
 import { createHandlersX, createHandlersY } from '@/components/handler-mouse'
-import Question from '@/components/sections/playground/questions'
+import QuestionsSection from '@/components/sections/playground/questions'
 import DocPreview from '@/components/doc-preview'
+import ChatBot from '@/components/Chatbot'
 
 const Playground = () => {
 
@@ -57,7 +58,7 @@ const Playground = () => {
             className="div0 overflow-hidden bg-[#0d0d0d] flex justify-center items-center rounded-xl"
             style={{ flex: '50%' }}
           >
-            <Question />
+            <QuestionsSection />
           </div>
           <div ref={resizerXRef} onMouseDown={handleMouseXDown} onMouseUp={handleMouseXUp} onMouseMove={handleMouseXMove} className="resizer-x"></div>
           <div
@@ -77,7 +78,7 @@ const Playground = () => {
           className="div1 overflow-hidden bg-[#0d0d0d] flex justify-center items-center rounded-xl"
           style={{ flex: '40%' }}
         >
-          <div className="text-white text-5xl">Resume / Chatbot</div>
+          <ChatBot />
         </div>
       </div>
     </div>

@@ -21,6 +21,11 @@ body {
     url("//db.onlinewebfonts.com/t/e5c490a944bc2b2746f0c851501e46c7.svg#AvenirNextW10-Bold") format("svg");
 }
 
+.lucide {
+  width: 48px;
+  right: 48px;
+}
+
 .Avenir {
   font-family: AvenirNextW10-Bold;
   font-display: swap;

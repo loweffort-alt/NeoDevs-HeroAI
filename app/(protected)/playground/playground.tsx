@@ -5,7 +5,8 @@ import './styles.css'
 import { createHandlersX, createHandlersY } from '@/components/handler-mouse'
 // import DocPreview from '@/components/doc-preview'
 import DocumentSection from '@/components/sections/playground/document'
-import Question from '@/components/sections/playground/questions'
+import QuestionsSection from '@/components/sections/playground/questions'
+import ChatBot from '@/components/Chatbot'
 
 type PlaygroundProps = {
   username: string
@@ -57,7 +58,7 @@ const Playground: React.FC<PlaygroundProps> = ({ username }) => {
               className="div0 overflow-hidden bg-[#0d0d0d] flex justify-center items-center rounded-xl"
               style={{ flex: '50%' }}
             >
-              <Question />
+              <QuestionsSection />
             </div>
             <div ref={resizerXRef} onMouseDown={handleMouseXDown} onMouseUp={handleMouseXUp} onMouseMove={handleMouseXMove} className="resizer-x"></div>
             <div
@@ -72,10 +73,10 @@ const Playground: React.FC<PlaygroundProps> = ({ username }) => {
           <div ref={resizerYRef} onMouseDown={handleMouseYDown} onMouseUp={handleMouseYUp} onMouseMove={handleMouseYMove} className="resizer-y"></div>
           <div
             ref={bottomRef}
-            className="div1 overflow-hidden bg-[#0d0d0d] flex justify-center items-center rounded-xl"
+            className="div1 flex overflow-hidden bg-[#0d0d0d] rounded-xl"
             style={{ flex: '40%' }}
           >
-            <div className="text-white text-5xl">Resume / Chatbot</div>
+            <ChatBot />
           </div>
         </div>
       </div>

@@ -1,12 +1,25 @@
-import { NextResponse } from "next/server";
+// import { NextResponse } from "next/server";
+const urlBackend = "https://hero-ai-backend.onrender.com/process-pdf/"
+const urlPdf = "https://stgacc777.blob.core.windows.net/docs/Uranus.pdf"
 
 export async function GET() {
-  const res = await fetch('https://dummyjson.com/comments/3', {
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  })
-  const data = await res.json()
+  const data = await import("../../../public/backend-example.json")
+  // const res = await fetch(urlBackend, {
+  //   method: "POST", // Método POST
+  //   headers: {
+  //     "Content-Type": "application/json", // Define el tipo de contenido como JSON
+  //   },
+  //   body: JSON.stringify({
+  //     pdf_url: urlPdf, // Envía la URL del PDF en el cuerpo
+  //   }),
+  // });
+  //
+  // // Manejo de la respuesta
+  // if (!res.ok) {
+  //   throw new Error(`Error en la solicitud: ${res.status} - ${res.statusText}`);
+  // }
+  //
+  // const data = await res.json()
 
   return Response.json({ data })
 }
@@ -42,7 +55,7 @@ export async function GET() {
 //   try {
 //     // Traduce texto usando Google Cloud Translation
 //     const text = data.body
-//     const target = "qu"; // Hindi
+//     const target = "qu"; // Quechua
 //
 //     // Traducción
 //     const [translation] = await translate.translate(text, target);

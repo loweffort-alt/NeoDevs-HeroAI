@@ -1,0 +1,149 @@
+{
+  "questions": [
+    {
+      "question_id": "779cbdcb-044b-4185-94e5-d277a66d008a",
+      "chunk_id": "2e1ae690-0f30-48bb-a291-b6e2eca12a91",
+      "question_dict": {
+        "question": "¿Qué gas en la atmósfera de Urano le da su color característico azul?",
+        "options": [
+          "Hidrógeno",
+          "Helio",
+          "Metano",
+          "Ammoníaco"
+        ],
+        "correct_answer": "Metano",
+        "topic": "Astronomía"
+      },
+      "reference_page": 3
+    },
+    {
+      "question_id": "4457d146-c48a-4e92-9569-c613e9360e43",
+      "chunk_id": "aba8b88b-3896-4be6-82cf-26b61d27f0ea",
+      "question_dict": {
+        "question": "¿Cuál es el color del anillo exterior mencionado en el texto?",
+        "options": [
+          "Rojo",
+          "Azul",
+          "Verde",
+          "Amarillo"
+        ],
+        "correct_answer": "Azul",
+        "topic": "Anillos del sistema solar"
+      },
+      "reference_page": 4
+    },
+    {
+      "question_id": "b2d1c8cd-7fa9-4c22-8c92-b4655c2cf15d",
+      "chunk_id": "50934841-1da4-4c23-86f6-8161c284c6ce",
+      "question_dict": {
+        "question": "¿Cómo se llaman los satélites que orbitan alrededor de Urano?",
+        "options": [
+          "Personajes de la mitología griega",
+          "Personajes de obras de William Shakespeare y Alexander Pope",
+          "Planetas enanos del sistema solar",
+          "Nombres de estrellas"
+        ],
+        "correct_answer": "Personajes de obras de William Shakespeare y Alexander Pope",
+        "topic": "Cuerpos celestes"
+      },
+      "reference_page": 4
+    },
+    {
+      "question_id": "c122f75c-63f5-4562-9f1b-24d76adaa746",
+      "chunk_id": "ecb2dd03-d871-42f4-8534-a80c8be99393",
+      "question_dict": {
+        "question": "¿Quién es el autor de la imagen titulada \"Uranus and Rings - Voyager\"?",
+        "options": [
+          "jccwrt",
+          "Voyager",
+          "Creative Commons",
+          "Flickr"
+        ],
+        "correct_answer": "jccwrt",
+        "topic": "Atribuciones de contenido"
+      },
+      "reference_page": 5
+    },
+    {
+      "question_id": "507900f9-d810-4321-997e-2b3962b38e79",
+      "chunk_id": "9d32f482-6d22-4387-bcc8-380c8dd84deb",
+      "question_dict": {
+        "question": "¿Qué planeta se analiza en profundidad en el artículo de NASA mencionado?",
+        "options": [
+          "Mercurio",
+          "Venus",
+          "Uranus",
+          "Neptuno"
+        ],
+        "correct_answer": "Uranus",
+        "topic": "Exploración del Sistema Solar"
+      },
+      "reference_page": 5
+    },
+    {
+      "question_id": "2c85d3ea-d83a-46ce-a824-c41b4179bad6",
+      "chunk_id": "ac901070-88e1-439b-a9a3-c903f03f4bc1",
+      "question_dict": {
+        "question": "¿Cuál es la principal característica del eje de rotación de Urano en comparación con otros planetas del sistema solar?",
+        "options": [
+          "Está inclinado a 45 grados",
+          "Está inclinado a 90 grados",
+          "Está casi en ángulo recto a su órbita",
+          "Está en ángulo recto a su órbita"
+        ],
+        "correct_answer": "Está casi en ángulo recto a su órbita",
+        "topic": "Astronomía"
+      },
+      "reference_page": 2
+    },
+    {
+      "question_id": "8ae04197-e153-4b1b-a412-c6701501ad8f",
+      "chunk_id": "9fd6802a-83bd-421d-9092-81714973d61f",
+      "question_dict": {
+        "question": "¿Qué tipo de viento predomina en el ecuador de Urano?",
+        "options": [
+          "Progrado",
+          "Retrogrado",
+          "Nulo",
+          "Variable"
+        ],
+        "correct_answer": "Retrogrado",
+        "topic": "Atmósfera de Urano"
+      },
+      "reference_page": 3
+    },
+    {
+      "question_id": "449e44f6-5c3d-4863-9173-d969f18f7de4",
+      "chunk_id": "a0ab4a78-d087-47d9-be8c-e45db44b8992",
+      "question_dict": {
+        "question": "Who discovered Uranus?",
+        "options": [
+          "Johann Elert Bode",
+          "William Herschel",
+          "Galileo Galilei",
+          "Isaac Newton"
+        ],
+        "correct_answer": "William Herschel",
+        "topic": "Astronomy"
+      },
+      "reference_page": 2
+    },
+    {
+      "question_id": "2afa853d-9f15-4d2c-8c89-1b91e1235bae",
+      "chunk_id": "9a51fdb1-22a2-4880-bba1-f9d44611a2b7",
+      "question_dict": {
+        "question": "¿Cuál es el principal componente del manto de Uranus que contribuye a su color azul-verde?",
+        "options": [
+          "A) Amoníaco",
+          "B) Metano",
+          "C) Agua",
+          "D) Helio"
+        ],
+        "correct_answer": "B) Metano",
+        "topic": "Estructura y características de Uranus"
+      },
+      "reference_page": 3
+    }
+  ],
+  "summary": "Urano, el séptimo planeta del sistema solar, es un gigante gaseoso y de hielo conocido por su atmósfera compuesta principalmente de hidrógeno, helio y metano, lo que le da un color azul-verde. Carece de superficie sólida y presenta extremas condiciones de temperatura y presión que complican su exploración. Su inclinación única de eje provoca estaciones extremas y rota en dirección opuesta a la mayoría de los planetas, reflejando su compleja historia de formación hace 4.5 mil millones de años. También posee un sistema de lunas y anillos con características diversas, y su entorno es inhóspito para la vida. Una imagen representativa de Urano y sus anillos fue tomada por el fotógrafo jccwrt y está bajo licencia Creative Commons."
+}
