@@ -7,6 +7,7 @@ import { createHandlersX, createHandlersY } from '@/components/handler-mouse'
 import DocumentSection from '@/components/sections/playground/document'
 import QuestionsSection from '@/components/sections/playground/questions'
 import ChatBot from '@/components/Chatbot'
+import { Button } from '@/components/ui/button'
 
 type PlaygroundProps = {
   username: string
@@ -47,6 +48,11 @@ const Playground: React.FC<PlaygroundProps> = ({ username }) => {
     resizerYRef
   )
 
+  function handleClickResume() {
+    const resumen = localStorage.getItem("resume")
+    setResume(resumen)
+  }
+
   return (
     <AuthContext.Provider value={username}>
       <div id="app" className="p-5">
@@ -76,7 +82,16 @@ const Playground: React.FC<PlaygroundProps> = ({ username }) => {
             className="div1 flex overflow-hidden bg-[#0d0d0d] rounded-xl"
             style={{ flex: '40%' }}
           >
-            <ChatBot />
+            <div className='grid grid-cols-2 w-full h-full'>
+              <div className='w-full h-full flex flex-col items-center justify-center p-10 gap-2'>
+                <Button onClick={handleClickResume}>
+                  Show Resume
+                </Button>
+              </div>
+              <div className='w-full h-full overflow-y-auto'>
+                <ChatBot />
+              </div>
+            </div>
           </div>
         </div>
       </div>

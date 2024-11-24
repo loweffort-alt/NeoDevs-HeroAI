@@ -13,7 +13,7 @@ const ChatBot: React.FC = () => {
 
     try {
       // Realiza la petición al endpoint del backend
-      const response = await axios.post("http://127.0.0.1:8000/chat/", {
+      const response = await axios.post("https://hero-ai-backend.onrender.com/chat/", {
         user_question: userMessage,
       });
 

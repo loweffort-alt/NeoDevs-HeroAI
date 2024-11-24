@@ -26,7 +26,7 @@ const QuestionsSection = () => {
       const questionId = question.question_id; // Usamos el question_id como clave
       const questionData = JSON.stringify(question); // Convertimos el objeto a JSON
       localStorage.setItem(index, questionData); // Guardamos en LocalStorage con la clave única
-      // console.log(question)
+      console.log(question)
     });
     setIsReady(true)
   }
@@ -55,13 +55,13 @@ const QuestionsSection = () => {
           }),
         });
 
-
         if (!response.ok) {
           throw new Error(`Error: ${response.statusText}`)
         }
         const result = await response.json()
+        const resume = result.data.summary
         const questions = result.data.questions
-
+        localStorage.setItem("resume", resume)
         console.log(questions)
         setQuestions(questions)
 
@@ -80,11 +80,12 @@ const QuestionsSection = () => {
     const selectedOption = optionsRefs.current[index]; // Accede al elemento específico
     const opt = selectedOption.innerHTML
     const correctAnswer = questions[currentIndex].question_dict.correct_answer
+    const firstDigit = correctAnswer.trim().slice(0, 2)
     if (opt == correctAnswer) {
       setCorrectRespuesta("")
       setIsCorrect(true)
     } else {
-      setCorrectRespuesta(correctAnswer)
+      setCorrectRespuesta(firstDigit)
       setIsCorrect(false)
     }
   }
