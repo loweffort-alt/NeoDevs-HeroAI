@@ -10,9 +10,8 @@ HERO AI es una innovadora herramienta de aprendizaje diseñada para mejorar la f
 
 ## 🖥️ Tecnologías Utilizadas
 
-- **Frontend**: Next.js (TypeScript) para una interfaz interactiva y responsiva.
+- **Frontend**: Next.js (TypeScript), JWT para autenticación de usuarios.
 - **Backend**: FastAPI con integración a la API de OpenAI y FAISS para el procesamiento de texto y generación de contenido. 
-- **Infraestructura**: Azure para almacenamiento de datos y procesamiento en la nube.
 
 El backend del proyecto está disponible en el siguiente repositorio:  
 ➡️ [HERO AI Backend](https://github.com/rafaelcg14/hero-ai-backend)
@@ -21,15 +20,15 @@ El backend del proyecto está disponible en el siguiente repositorio:
 
 Somos un equipo de dos integrantes apasionados por la tecnología y la innovación:
 
-### 👤 Rafael Castellanos Guzmán
-- **Rol**: Fullstack Developer  
-- **Portafolio**: [Rafael Castellanos](https://rafael-portafolio.com)  
-- **Contacto**: [rafaelcg14@gmail.com](mailto:rafaelcg14@gmail.com)
+### 👤 Rafael Castellanos
+- **Rol**:  Backend y Azure AI Engineer
+- **Portafolio**: [Rafael Castellanos]([https://rafael-portafolio.com](https://rafaelcg14.github.io/rafael-castellanos-portfolio/))  
+- **Contacto**: [Correo](mailto:rafaelcg2718@gmail.com)
 
-### 👤 [Nombre del Segundo Integrante]  
-- **Rol**: Especialista en Azure AI y Backend  
-- **Portafolio**: [Nombre Integrante](https://segundointegrante-portafolio.com)  
-- **Contacto**: [correo-segundo-integrante@gmail.com](mailto:correo-segundo-integrante@gmail.com)
+### 👤 Darío Farfán
+- **Rol**: Fullstack Developer 
+- **Portafolio**: [Darío Farfán]([https://segundointegrante-portafolio.com](https://alexfarfan.site/))  
+- **Contacto**: [Correo](mailto:farfan_alexander@outlook.com)
 
 ## 🛠️ Instalación y Configuración
 
@@ -63,9 +62,5 @@ El proyecto fue desarrollado en la Hackathon Inspiratec 2024 con el objetivo de 
 
 ¡Agradecemos cualquier sugerencia o contribución al proyecto! Por favor, abre un **issue** o envía un **pull request** en el repositorio.
 
-## 📩 Contacto
-
-
----
 
 Este README describe claramente tu proyecto y ofrece una buena introducción a sus funcionalidades y propósito. Si necesitas cambios o agregar algo más, ¡avísame! 😊
