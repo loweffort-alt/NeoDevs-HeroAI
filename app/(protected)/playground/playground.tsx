@@ -8,6 +8,17 @@ import DocumentSection from '@/components/sections/playground/document'
 import QuestionsSection from '@/components/sections/playground/questions'
 import ChatBot from '@/components/Chatbot'
 import { Button } from '@/components/ui/button'
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
 
 type PlaygroundProps = {
   username: string
