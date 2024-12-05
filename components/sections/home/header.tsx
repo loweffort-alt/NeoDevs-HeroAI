@@ -1,8 +1,10 @@
 "use client"
-import LogoNavbar from "@/components/ui/logo-navbar";
-import MenuToggle from "@/components/menu-toggle";
 import OptionsHeader from "@/components/options-header";
 import React, { createContext, useCallback, useContext } from "react";
+import Link from 'next/link'
+import { Menu } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ModeToggle } from "@/components/ui/mode-toggle";
 
 const AuthContext = createContext(null)
 
@@ -16,16 +18,37 @@ const Header = () => {
   }, [])
 
   return (
-    <header className="fixed top-0 w-full clearNav z-50">
-      <div className="max-w-5xl mx-auto flex flex-wrap p-3 flex-col md:flex-row">
-        <div className="flex flex-row items-center justify-between p-3 md:p-1">
-          <LogoNavbar />
-          <MenuToggle onClick={toggleNavbar} />
+    <header className="fixed top-0 w-full z-50 nav-separator">
+      <div className="max-w-5xl mx-auto flex justify-center flex-wrap flex-col md:flex-row">
+        <div className="flex flex-row items-center justify-between p-3 md:py-4 w-full">
+          <Link
+            href="#home"
+            className="flex text-xl md:text-3xl font-medium md:mb-0 dark:text-foreground"
+          >HeroAI
+          </Link>
+          <div
+            className="hidden md:flex flex-col md:flex-row flex-grow items-center transition-all"
+          >
+            <OptionsHeader />
+          </div>
+          <div className="flex gap-2 items-center">
+            <Button>
+              <Link href="/logout">
+                Login
+              </Link>
+            </Button>
+            <ModeToggle />
+            <div
+              className="md:hidden"
+              onClick={toggleNavbar}
+            >
+              <Menu />
+            </div>
+          </div>
         </div>
         <div
           className={
-            "md:flex flex-col md:flex-row flex-grow items-center transition-all" +
-            (navbarOpen ? " flex max-md:h-[85vh] w-full self-end" : " hidden")
+            (navbarOpen ? " max-md:h-[85vh]" : " hidden")
           }
         >
           <OptionsHeader />
