@@ -23,8 +23,8 @@ export default function Home() {
     >
       <Header />
       <Hero />
-      <DevTools />
       <Explication />
+      <DevTools />
       <Footer />
     </div>
   );
