@@ -1,26 +1,73 @@
-.tag-list {
-  margin: 0;
-  padding-inline: 0;
-  list-style-type: none;
-  animation: scroller-inf 10s linear infinite;
-}
-
-/*El fallo es porque no se está aplicando la animación al div que contiene las imágenes, sino al div con un width definido que es el scroller*/
-
-.tag-list img {
-  background: crimson;
-}
-
 .scroller {
-  max-width: 1000px;
+  min-width: calc(100% - 12rem);
+  min-height: 100px;
   overflow: hidden;
-  outline: 3px solid lime;
+  position: relative;
 }
 
-.scroller__inner {
-  display: flex;
-  gap: 4rem;
-  padding-block: 1rem;
+.scroller::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  width: 4rem;
+  height: 100%;
+  background: linear-gradient(90deg, hsl(var(--background)) 25%, rgba(0, 212, 255, 0) 100%);
+  left: 0;
+  top: 0;
+}
+
+.scroller::after {
+  content: "";
+  position: absolute;
+  width: 4rem;
+  height: 100%;
+  background: linear-gradient(270deg, hsl(var(--background)) 25%, rgba(0, 212, 255, 0) 100%);
+  right: 0;
+  top: 0;
+}
+
+@media (max-width: 768px) {
+  .scroller {
+    min-width: calc(100% - 2rem);
+  }
+
+  .scroller::before {
+    width: 1rem;
+  }
+
+  .scroller::after {
+    width: 1rem;
+  }
+}
+
+.wea {
+  animation: scroller-inf 20s linear infinite;
+  white-space: nowrap;
+  box-sizing: content-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: max-content;
+}
+
+.wea img {
+  display: inline-block;
+  margin: 0 2rem;
+}
+
+.wea2 {
+  animation: scroller-inf 20s linear infinite;
+  white-space: nowrap;
+  box-sizing: content-box;
+  position: absolute;
+  top: 0;
+  left: 1488px;
+  width: max-content;
+}
+
+.wea2 img {
+  display: inline-block;
+  margin: 0 2rem;
 }
 
 @keyframes scroller-inf {

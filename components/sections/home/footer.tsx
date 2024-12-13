@@ -6,11 +6,11 @@ const Footer = () => {
       <div className="max-w-5xl xl:max-w-5xl mx-auto divide-y divide-gray-900 px-4 sm:px-6 md:px-8">
         <ul className="text-sm font-medium sm:pb-20 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-10">
           <li className="space-y-5 row-span-2">
-            <h2 className="text-2xl tracking-wide text-white">Software</h2>
+            <h2 className="text-2xl tracking-wide">Software</h2>
             <ul className="space-y-4 text-md">
               <li>
                 <Link
-                  className="hover:text-white transition-colors duration-200 text-xl"
+                  className="hover:text-primary transition-colors duration-200 text-xl"
                   href="/"
                 >
                   Playground
@@ -18,7 +18,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  className="hover:text-white transition-colors duration-200 text-xl"
+                  className="hover:text-primary transition-colors duration-200 text-xl"
                   href="/"
                 >
                   Dashboard
@@ -26,7 +26,7 @@ const Footer = () => {
               </li>{" "}
               <li>
                 <Link
-                  className="hover:text-white transition-colors duration-200 text-xl"
+                  className="hover:text-primary transition-colors duration-200 text-xl"
                   href="/"
                 >
                   Landing Page
@@ -35,11 +35,11 @@ const Footer = () => {
             </ul>
           </li>
           <li className="space-y-5 row-span-2">
-            <h2 className="text-2xl tracking-wide text-white">Herramientas</h2>
+            <h2 className="text-2xl tracking-wide">Herramientas</h2>
             <ul className="space-y-4">
               <li>
                 <Link
-                  className="hover:text-white transition-colors duration-200 text-xl"
+                  className="hover:text-primary transition-colors duration-200 text-xl"
                   href="/"
                 >
                   NextJS
@@ -47,7 +47,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  className="hover:text-white transition-colors duration-200 text-xl"
+                  className="hover:text-primary transition-colors duration-200 text-xl"
                   href="/"
                 >
                   PostgreSQL
@@ -55,7 +55,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  className="hover:text-white transition-colors duration-200 text-xl"
+                  className="hover:text-primary transition-colors duration-200 text-xl"
                   href="/"
                 >
                   FastAPI
@@ -63,7 +63,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  className="hover:text-white transition-colors duration-200 text-xl"
+                  className="hover:text-primary transition-colors duration-200 text-xl"
                   href="/"
                 >
                   OpenAI
@@ -72,11 +72,11 @@ const Footer = () => {
             </ul>
           </li>
           <li className="space-y-5 row-span-2">
-            <h2 className="text-2xl tracking-wide text-white">Hackaton</h2>
+            <h2 className="text-2xl tracking-wide">Hackaton</h2>
             <ul className="space-y-4">
               <li>
                 <Link
-                  className="hover:text-white transition-colors duration-200 text-xl"
+                  className="hover:text-primary transition-colors duration-200 text-xl"
                   href="/"
                 >
                   IDAT
@@ -84,7 +84,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  className="hover:text-white transition-colors duration-200 text-xl"
+                  className="hover:text-primary transition-colors duration-200 text-xl"
                   href="/"
                 >
                   Nova Academy
@@ -92,7 +92,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  className="hover:text-white transition-colors duration-200 text-xl"
+                  className="hover:text-primary transition-colors duration-200 text-xl"
                   href="/"
                 >
                   Programa
@@ -100,7 +100,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  className="hover:text-white transition-colors duration-200 text-xl"
+                  className="hover:text-primary transition-colors duration-200 text-xl"
                   href="/"
                 >
                   Bases
@@ -109,11 +109,11 @@ const Footer = () => {
             </ul>
           </li>
           <li className="space-y-5">
-            <h2 className="text-2xl tracking-wide text-white">Contacto</h2>
+            <h2 className="text-2xl tracking-wide">Hecho por:</h2>
             <ul className="space-y-4">
               <li>
                 <Link
-                  className="hover:text-white transition-colors duration-200 text-xl"
+                  className="hover:text-primary transition-colors duration-200 text-xl"
                   href="/"
                 >
                   Darío Farfán
@@ -121,7 +121,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  className="hover:text-white transition-colors duration-200 text-xl"
+                  className="hover:text-primary transition-colors duration-200 text-xl"
                   href="/"
                 >
                   Rafael Castellanos
