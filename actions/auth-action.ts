@@ -88,6 +88,6 @@ export const registerAction = async (values: z.infer<typeof registerSchema>) => 
     if (error instanceof AuthError) {
       return { error: error.cause?.err?.message }
     }
-    return { error: "error 500" }
+    return { error: error }
   }
 }

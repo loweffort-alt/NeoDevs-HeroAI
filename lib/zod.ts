@@ -27,3 +27,7 @@ export const resSchema = object({
   respuesta: string({ required_error: "Debes responder" })
     .min(1, "Respuesta es requerida"),
 })
+
+export const chatbotSchema = object({
+  chat: string({ required_error: "Write something..." })
+})

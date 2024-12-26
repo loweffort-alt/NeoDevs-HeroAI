@@ -33,7 +33,7 @@ const Header = () => {
           </div>
           <div className="flex gap-2 items-center">
             <Button>
-              <Link href="/logout">
+              <Link href="/login">
                 Login
               </Link>
             </Button>
@@ -48,7 +48,7 @@ const Header = () => {
         </div>
         <div
           className={
-            (navbarOpen ? " max-md:h-[85vh]" : " hidden")
+            (navbarOpen ? " max-md:h-[100vh]" : " hidden")
           }
         >
           <OptionsHeader />

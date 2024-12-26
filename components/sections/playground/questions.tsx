@@ -1,17 +1,17 @@
 "use client"
 
 import { Button } from '@/components/ui/button'
-import { BadgeCheck, CircleArrowLeft, CircleArrowRight, Divide, Loader2, RefreshCw } from 'lucide-react'
+import { CircleArrowLeft, CircleArrowRight, Loader2 } from 'lucide-react'
 import React, { useEffect, useRef, useState, useTransition } from 'react'
-import { BackendData, Question, QuestionDict } from '@/lib/backend-types'
+import { Question } from '@/lib/backend-types'
 
 
 const QuestionsSection = () => {
   // const [data, setData] = useState()
-  const [language, setLanguage] = useState<{ originalText: string; translatedText: string }>({ originalText: "", translatedText: "" });
-  const [inputData, setInputData] = useState<string>("")
+  // const [language, setLanguage] = useState<{ originalText: string; translatedText: string }>({ originalText: "", translatedText: "" });
+  // const [inputData, setInputData] = useState<string>("")
   const [question, setQuestion] = useState<any>()
-  const [questions, setQuestions] = useState<any>()
+  const [questions, setQuestions] = useState<string>()
   const [error, setError] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition()
   const [isReady, setIsReady] = useState(false)
@@ -38,7 +38,6 @@ const QuestionsSection = () => {
       setQuestion(question1.question_dict.question)
     }
   }, [isReady])
-
 
   function getBackendResponse() {
     const documentUrl = localStorage.getItem("docUrl")

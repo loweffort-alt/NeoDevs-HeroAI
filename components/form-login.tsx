@@ -45,54 +45,52 @@ const FormLogin = () => {
   }
 
   return (
-    <div className="grid items-center h-screen font-4">
-      <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 w-72 m-auto flex flex-col justify-center">
-          <h1 className="text-5xl text-center font-4 lh-6 ld-04 font-bold mb-6">Sign In</h1>
-          <FormField
-            control={form.control}
-            name="email"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Email</FormLabel>
-                <FormControl>
-                  <Input placeholder="email" {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="password"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Username</FormLabel>
-                <FormControl>
-                  <Input type="password" placeholder="password" {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
+    <Form {...form}>
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 w-72 m-auto flex flex-col justify-center">
+        <h1 className="text-5xl text-center font-4 lh-6 ld-04 font-bold mb-6">Sign In</h1>
+        <FormField
+          control={form.control}
+          name="email"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Email</FormLabel>
+              <FormControl>
+                <Input placeholder="email" {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="password"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Username</FormLabel>
+              <FormControl>
+                <Input type="password" placeholder="password" {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        {
+          error && <FormMessage> {error} </FormMessage>
+        }
+        <Button type="submit" disabled={isPending}>
           {
-            error && <FormMessage> {error} </FormMessage>
+            isPending ?
+              <>
+                <Loader2 className="animate-spin" />
+                Please wait
+              </> :
+              <>
+                Submit
+              </>
           }
-          <Button type="submit" disabled={isPending}>
-            {
-              isPending ?
-                <>
-                  <Loader2 className="animate-spin" />
-                  Please wait
-                </> :
-                <>
-                  Submit
-                </>
-            }
-          </Button>
-        </form>
-      </Form>
-    </div>
+        </Button>
+      </form>
+    </Form>
   )
 }
 

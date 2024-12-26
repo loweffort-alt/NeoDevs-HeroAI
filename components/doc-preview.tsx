@@ -38,7 +38,9 @@ const DocPreview = ({ url }) => {
     <div
       className="h-full w-full rounded-xl overflow-auto overflow-x-hidden relative"
     >
-      <Document noData={noDoc} loading={loadingDoc} file={url} onLoadSuccess={onDocumentLoadSuccess}>
+      <Document noData={noDoc} loading={loadingDoc} file={url} onLoadSuccess={onDocumentLoadSuccess}
+        onLoadError={(error) => alert('Error while retrieving the outline! ' + error.message)}
+      >
         {Array.apply(null, Array(numPages))
           .map((x, i) => i + 1)
           .map((page, index) => {

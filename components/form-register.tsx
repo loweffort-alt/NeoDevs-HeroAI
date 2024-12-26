@@ -89,7 +89,7 @@ const FormRegister = () => {
             )}
           />
           {
-            error && <FormMessage> {error} </FormMessage>
+            error && <FormMessage> {console.error(error)} </FormMessage>
           }
           <Button type="submit" disabled={isPending}>Submit</Button>
         </form>
