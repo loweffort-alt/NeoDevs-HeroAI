@@ -1,5 +1,12 @@
 export interface BackendData {
   questions: Question[];
+  summary: string;
+  default: Default;
+}
+
+export interface Default {
+  questions: Question[];
+  summary: string;
 }
 
 export interface Question {
@@ -13,5 +20,6 @@ export interface QuestionDict {
   question: string;
   options: string[];
   correct_answer: string;
+  topic: string;
 }
 

@@ -9,7 +9,7 @@ const LoginPage = () => {
         <FormLogin />
       </div>
       <div>
-        <p>Don't have an account?
+        <p>{"Don't have an account?"}
           <Button variant="link" className="text-foreground">
             <Link href="/register">
               Sign up

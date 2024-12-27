@@ -4,60 +4,6 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  .resizable-x,
-  .resizable-y {
-    display: flex;
-    overflow: hidden;
-  }
-
-  .resizable-x {
-    height: 100%;
-    flex-direction: row;
-  }
-
-  .resizable-y {
-    height: 100%;
-    flex-direction: column;
-  }
-
-  .resizer-x,
-  .resizer-y {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 4px;
-  }
-
-  .resizer-x {
-    z-index: 2;
-    cursor: col-resize;
-  }
-
-  .resizer-x::before,
-  .resizer-x::after {
-    content: "";
-    width: 2px;
-    height: 16px;
-    margin: 2px;
-    background: lightgray;
-  }
-
-  .resizer-y {
-    z-index: 1;
-    cursor: row-resize;
-    flex-direction: column;
-  }
-
-  .resizer-y::before,
-  .resizer-y::after {
-    content: "";
-    width: 16px;
-    height: 2px;
-    margin: 2px;
-    background: lightgray;
-  }
-
   ::-webkit-scrollbar {
     width: 10px;
   }
@@ -120,17 +66,4 @@
     margin: 8px 0;
     max-width: 70%;
     word-wrap: break-word;
-  }
-
-  .chatInputContainer {
-    display: flex;
-    padding: 16px;
-  }
-
-  .chatInput {
-    flex-grow: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
   }

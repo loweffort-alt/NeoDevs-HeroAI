@@ -26,9 +26,13 @@ function loadingDoc() {
   )
 }
 
-const DocPreview = ({ url }) => {
-  const [numPages, setNumPages] = useState<number>();
-  const [pageNumber, setPageNumber] = useState<number>(1);
+interface Url {
+  url: string
+}
+
+const DocPreview: React.FC<Url> = ({ url }) => {
+  const [numPages, setNumPages] = useState<number>(0);
+  // const [pageNumber, setPageNumber] = useState<number>(1);
 
   function onDocumentLoadSuccess({ numPages }: { numPages: number }): void {
     setNumPages(numPages);
@@ -41,8 +45,8 @@ const DocPreview = ({ url }) => {
       <Document noData={noDoc} loading={loadingDoc} file={url} onLoadSuccess={onDocumentLoadSuccess}
         onLoadError={(error) => alert('Error while retrieving the outline! ' + error.message)}
       >
-        {Array.apply(null, Array(numPages))
-          .map((x, i) => i + 1)
+        {[...Array(numPages)]
+          .map((_, i) => i + 1)
           .map((page, index) => {
             return (
               <Page

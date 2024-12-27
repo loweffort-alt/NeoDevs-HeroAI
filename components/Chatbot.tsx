@@ -1,32 +1,13 @@
-import { useState, useTransition } from "react"
+import { useState, useRef, useEffect } from "react"
 import axios from "axios";
-import { useForm } from "react-hook-form"
 import { Button } from "@/components/ui/button"
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form"
-import { Input } from "@/components/ui/input"
-import { chatbotSchema, loginSchema } from "@/lib/zod";
-import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod"
 
 const ChatBot: React.FC = () => {
   const [userMessage, setUserMessage] = useState<string>(""); // Mensaje del usuario
   const [chatHistory, setChatHistory] = useState<{ role: string; content: string }[]>([]); // Historial de mensajes
+  const chatRef = useRef<HTMLDivElement>(null);
 
-  const form = useForm<z.infer<typeof chatbotSchema>>({
-    resolver: zodResolver(chatbotSchema),
-    defaultValues: {
-      chat: "",
-    }
-  })
-
-  async function onSubmit(values: z.infer<typeof loginSchema>) {
+  async function sendMessage() {
     if (!userMessage.trim()) return; // Evitar mensajes vacíos
     // Añade el mensaje del usuario al historial
     setChatHistory((prev) => [...prev, { role: "user", content: userMessage }]);
@@ -54,9 +35,17 @@ const ChatBot: React.FC = () => {
     setUserMessage("");
   }
 
+  useEffect(() => {
+    if (chatRef.current) {
+      chatRef.current.scrollTop = chatRef.current.scrollHeight;
+    }
+  }, [chatHistory]);
+
+  // TODO: Pintar de rojo el mensaje del bot si hay un error y desactivar el input
+
   return (
     <div className="w-full h-full flex flex-col">
-      <div className="chatHistory flex-1">
+      <div className="chatHistory flex-1" ref={chatRef}>
         {chatHistory.map((message, index) => (
           <div
             key={index}
@@ -68,31 +57,17 @@ const ChatBot: React.FC = () => {
           </div>
         ))}
       </div>
-      <div className="chatInputContainer">
-        <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="w-full flex item-center justify-center gap-10">
-            <FormField
-              control={form.control}
-              name="chat"
-              render={({ field }) => (
-                <FormItem className="flex-1">
-                  <FormControl>
-                    <Input
-                      placeholder="Chatea con tu archivo pdf aquí"
-                      {...field}
-                      value={userMessage}
-                      onChange={(e) => setUserMessage(e.target.value)}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <Button type="submit">
-              Enviar
-            </Button>
-          </form>
-        </Form>
+      <div className="flex p-4">
+        <input
+          className="flex-1 px-3 mr-3 rounded focus:outline-none"
+          placeholder="Chatea con tu archivo pdf aquí"
+          value={userMessage}
+          onChange={(e) => setUserMessage(e.target.value)}
+          onKeyDown={(e) => e.key === "Enter" && sendMessage()}
+        />
+        <Button onClick={sendMessage}>
+          Enviar
+        </Button>
       </div>
     </div>
   );

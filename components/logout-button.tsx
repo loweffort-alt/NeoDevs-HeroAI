@@ -9,6 +9,7 @@ const LogoutButton = () => {
   const [isPending, startTransition] = useTransition()
 
   function handleClick() {
+    // @ts-expect-error Async functions inside startTransition
     startTransition(async () => {
       try {
         await signOut({
@@ -21,7 +22,7 @@ const LogoutButton = () => {
   }
 
   return (
-    <Button type="submit" onClick={handleClick} disabled={isPending}>
+    <Button type="submit" onClick={handleClick} disabled={isPending} variant="destructive">
       {
         isPending ?
           <>

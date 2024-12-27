@@ -13,7 +13,6 @@ const MultiFileDropzoneUsage = () => {
   const router = useRouter()
   const username = useAuth()
   const [fileStates, setFileStates] = useState<FileState[]>([]);
-  const [urls, setUrls] = useState<string[]>([])
   const { edgestore } = useEdgeStore();
 
   function updateFileProgress(key: string, progress: FileState['progress']) {
@@ -40,7 +39,7 @@ const MultiFileDropzoneUsage = () => {
         console.log(addedFiles)
         try {
           await Promise.all(
-            addedFiles.map(async (addedFileState, index) => {
+            addedFiles.map(async (addedFileState) => {
               try {
                 const res = await edgestore.myPublicFiles.upload({
                   file: addedFileState.file,

@@ -28,6 +28,3 @@ export const resSchema = object({
     .min(1, "Respuesta es requerida"),
 })
 
-export const chatbotSchema = object({
-  chat: string({ required_error: "Write something..." })
-})

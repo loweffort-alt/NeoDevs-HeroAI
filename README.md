@@ -42,11 +42,18 @@ Somos un equipo de dos integrantes apasionados por la tecnolog√≠a y la innovaci√
    ```bash
    npm install
    ```
-3. Inicia el servidor de desarrollo:
+3. Configura tu variable de entorno en un archivo `.env.local`:
+   ```txt   
+    EDGE_STORE_ACCESS_KEY=TBGjLisOAxzUWnYL3HTHZAhD2qEANyZD
+    EDGE_STORE_SECRET_KEY=PRLLPdZEWy4zfWlMvarVAa4kRkvaqAffE6oOywUTBolqxjFl
+    AUTH_SECRET=heroai
+    DATABASE_URL=postgresql://postgres:GkZg6hevq1VcsW@db.ohlbhtnxgvxhdnjrtkil.supabase.co:5432/postgres
+   ```
+4. Inicia el servidor de desarrollo:
    ```bash
    npm run dev
    ```
-4. Accede al frontend en [http://localhost:3000](http://localhost:3000).
+5. Accede al frontend en [http://localhost:3000](http://localhost:3000).
 
 ### **Backend**
 Sigue las instrucciones disponibles en el repositorio del backend:  

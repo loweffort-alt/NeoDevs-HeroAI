@@ -34,12 +34,14 @@ const FormRegister = () => {
 
   async function onSubmit(values: z.infer<typeof registerSchema>) {
     setError(null)
+    // @ts-expect-error Async functions inside startTransition
     startTransition(async () => {
-      const response = await registerAction(values)
-      if (response.error) {
-        setError(response.error)
-      } else {
+      try {
+        await registerAction(values)
         router.push("/playground")
+      } catch (error) {
+        setError("User Doesn't Exist")
+        console.error(error)
       }
     })
   }
@@ -89,7 +91,7 @@ const FormRegister = () => {
             )}
           />
           {
-            error && <FormMessage> {console.error(error)} </FormMessage>
+            error && <FormMessage> {error} </FormMessage>
           }
           <Button type="submit" disabled={isPending}>Submit</Button>
         </form>

@@ -34,6 +34,7 @@ const FormLogin = () => {
 
   async function onSubmit(values: z.infer<typeof loginSchema>) {
     setError(null)
+    // @ts-expect-error Async functions inside startTransition
     startTransition(async () => {
       const response = await loginAction(values)
       if (response.error) {

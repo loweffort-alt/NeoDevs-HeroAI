@@ -1,10 +1,10 @@
 "use client"
 
-import { createContext, useContext, useRef, useState } from 'react'
+import { createContext, useContext } from 'react'
 import './styles.css'
 // import DocPreview from '@/components/doc-preview'
 import DocumentSection from '@/components/sections/playground/document'
-import QuestionsSection from '@/components/sections/playground/questions'
+import { NoQuestion } from '@/components/sections/playground/questions'
 import ChatBot from '@/components/Chatbot'
 import {
   ResizableHandle,
@@ -26,7 +26,7 @@ const Playground: React.FC<PlaygroundProps> = ({ username }) => {
     <AuthContext.Provider value={username}>
       <ResizablePanelGroup direction="horizontal">
         <ResizablePanel defaultSize={25}>
-          <QuestionsSection />
+          <NoQuestion />
         </ResizablePanel>
         <ResizableHandle />
         <ResizablePanel>
