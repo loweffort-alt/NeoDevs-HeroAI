@@ -14,3 +14,15 @@ export async function POST() {
   }
 }
 
+export async function GET() {
+  try {
+    return Response.json({ data: "Hello World" })
+  } catch (error) {
+    console.error("Error procesando la solicitud:", error);
+    return new Response(
+      JSON.stringify({ error: "Hubo un problema al procesar la solicitud" }),
+      { status: 500 }
+    );
+  }
+}
+
