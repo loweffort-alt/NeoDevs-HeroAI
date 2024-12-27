@@ -22,7 +22,7 @@ const Header = () => {
       <div className="max-w-5xl mx-auto flex justify-center flex-wrap flex-col md:flex-row">
         <div className="flex flex-row items-center justify-between p-3 md:py-4 w-full">
           <Link
-            href="#home"
+            href="/"
             className="flex text-xl md:text-3xl font-medium md:mb-0 dark:text-foreground"
           >HeroAI
           </Link>

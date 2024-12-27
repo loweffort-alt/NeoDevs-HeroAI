@@ -188,8 +188,8 @@ export const QuestionsSection = () => {
 
 export const NoQuestion = () => {
   return (
-    <div className="text-white flex flex-col h-full w-full">
-      <div className='border w-full h-16 p-4 flex justify-between items-center'>
+    <div className="flex flex-col h-full w-full">
+      <div className='border-b dark:border-border shadow w-full h-16 p-4 flex justify-between items-center'>
         <LogoutButton />
         <Button variant="outline">
           Traducir
@@ -199,7 +199,7 @@ export const NoQuestion = () => {
       <div className='flex-1'>
       </div>
 
-      <div className='border w-full h-16 p-4 flex justify-between items-center'>
+      <div className='border-t border-neutral-400 shadow dark:border-border w-full h-16 p-4 flex justify-between items-center'>
         <Button variant="outline">
           <CircleArrowLeft />
           Next
@@ -209,7 +209,6 @@ export const NoQuestion = () => {
           <CircleArrowRight />
         </Button>
       </div>
-
     </div >
   )
 }

@@ -59,7 +59,7 @@ const ChatBot: React.FC = () => {
       </div>
       <div className="flex p-4">
         <input
-          className="flex-1 px-3 mr-3 rounded focus:outline-none"
+          className="flex-1 px-3 mr-3 rounded focus:outline-none bg-[rgb(18,18,18)]"
           placeholder="Chatea con tu archivo pdf aquí"
           value={userMessage}
           onChange={(e) => setUserMessage(e.target.value)}
