@@ -19,7 +19,7 @@ import { useState, useTransition } from "react"
 import { useRouter } from "next/navigation"
 
 const FormRegister = () => {
-  const [error, setError] = useState<string | null>(null)
+  // const [error, setError] = useState<string | null>(null)
   const [isPending, startTransition] = useTransition()
   const router = useRouter()
 
@@ -33,15 +33,15 @@ const FormRegister = () => {
   })
 
   async function onSubmit(values: z.infer<typeof registerSchema>) {
-    setError(null)
+    // setError(null)
     startTransition(() => {
       registerAction(values)
         .then(() => {
           router.push("/playground"); // Redirigir al usuario si el registro es exitoso
         })
         .catch((error) => {
-          setError("User Doesn't Exist"); // Mostrar error si falla el registro
-          console.error(error); // Imprimir error en consola
+          // setError("User Doesn't Exist"); // Mostrar error si falla el registro
+          console.log({ error }); // Imprimir error en consola
         });
     });
   }
@@ -90,9 +90,9 @@ const FormRegister = () => {
               </FormItem>
             )}
           />
-          {
-            error && <FormMessage> {error} </FormMessage>
-          }
+          {/* { */}
+          {/*   error && <FormMessage> {error} </FormMessage> */}
+          {/* } */}
           <Button type="submit" disabled={isPending}>Submit</Button>
         </form>
       </Form>

@@ -38,12 +38,13 @@ const FormLogin = () => {
       loginAction(values).then(response => {
         if (response.error) {
           console.error(response.error);
+          console.error(response.error.digest);
           // setError(response.error);
         } else {
           router.push("/playground");
         }
       }).catch(error => {
-        console.error(error);
+        console.log({ error });
       });
     });
   }
