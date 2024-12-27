@@ -34,15 +34,17 @@ const FormLogin = () => {
 
   async function onSubmit(values: z.infer<typeof loginSchema>) {
     setError(null)
-    // @ts-expect-error Async functions inside startTransition
-    startTransition(async () => {
-      const response = await loginAction(values)
-      if (response.error) {
-        setError(response.error)
-      } else {
-        router.push("/playground")
-      }
-    })
+    startTransition(() => {
+      loginAction(values).then(response => {
+        if (response.error) {
+          setError(response.error);
+        } else {
+          router.push("/playground");
+        }
+      }).catch(error => {
+        console.error(error);
+      });
+    });
   }
 
   return (

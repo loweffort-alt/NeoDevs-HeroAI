@@ -34,16 +34,16 @@ const FormRegister = () => {
 
   async function onSubmit(values: z.infer<typeof registerSchema>) {
     setError(null)
-    // @ts-expect-error Async functions inside startTransition
-    startTransition(async () => {
-      try {
-        await registerAction(values)
-        router.push("/playground")
-      } catch (error) {
-        setError("User Doesn't Exist")
-        console.error(error)
-      }
-    })
+    startTransition(() => {
+      registerAction(values)
+        .then(() => {
+          router.push("/playground"); // Redirigir al usuario si el registro es exitoso
+        })
+        .catch((error) => {
+          setError("User Doesn't Exist"); // Mostrar error si falla el registro
+          console.error(error); // Imprimir error en consola
+        });
+    });
   }
 
   return (

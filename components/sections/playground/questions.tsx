@@ -24,41 +24,79 @@ export const QuestionsSection = () => {
   const [wasAnswered, setWasAnswered] = useState(false)
   const [isCorrect, setIsCorrect] = useState(false)
 
+  // TODO: Este comportamiento es el correcto pero hay error de tipado
+  // useEffect(() => {
+  //   function getBackendResponse() {
+  //     const documentUrl = localStorage.getItem("docUrl")
+  //
+  //     startTransition(async () => {
+  //       try {
+  //         // NOTE: Elegir Backend
+  //         // const backendURL = "/api/production"
+  //         const backendURL = "/api/development"
+  //
+  //         const response = await fetch(backendURL, {
+  //           method: "POST", // Cambiado a POST para enviar datos
+  //           headers: {
+  //             "Content-Type": "application/json", // Encabezado necesario para JSON
+  //           },
+  //           body: JSON.stringify({
+  //             url: documentUrl, // Envía el docUrl como pdf_url
+  //           }),
+  //         });
+  //
+  //         if (!response.ok) {
+  //           throw new Error(`Error: ${response.statusText}`)
+  //         }
+  //
+  //         const result = await response.json()
+  //         const questions = result.data.questions
+  //         setAllQuestions(questions)
+  //         // const summary = result.data.summary
+  //         // setResume(summary)
+  //         setIsReady(true)
+  //       } catch (err) {
+  //         console.log(err)
+  //       }
+  //     })
+  //   }
+  //   getBackendResponse()
+  // }, [])
+
   useEffect(() => {
-    function getBackendResponse() {
+    async function getBackendResponse() {
       const documentUrl = localStorage.getItem("docUrl")
 
-      // @ts-expect-error Async functions inside startTransition
-      startTransition(async () => {
-        try {
-          // NOTE: Elegir Backend
-          // const backendURL = "/api/production"
-          const backendURL = "/api/development"
+      try {
+        // NOTE: Elegir Backend
+        // const backendURL = "/api/production"
+        const backendURL = "/api/development"
 
-          const response = await fetch(backendURL, {
-            method: "POST", // Cambiado a POST para enviar datos
-            headers: {
-              "Content-Type": "application/json", // Encabezado necesario para JSON
-            },
-            body: JSON.stringify({
-              url: documentUrl, // Envía el docUrl como pdf_url
-            }),
-          });
+        const response = await fetch(backendURL, {
+          method: "POST", // Cambiado a POST para enviar datos
+          headers: {
+            "Content-Type": "application/json", // Encabezado necesario para JSON
+          },
+          body: JSON.stringify({
+            url: documentUrl, // Envía el docUrl como pdf_url
+          }),
+        });
 
-          if (!response.ok) {
-            throw new Error(`Error: ${response.statusText}`)
-          }
+        if (!response.ok) {
+          throw new Error(`Error: ${response.statusText}`)
+        }
 
-          const result = await response.json()
-          const questions = result.data.questions
+        const result = await response.json()
+        const questions = result.data.questions
+        startTransition(() => {
           setAllQuestions(questions)
           // const summary = result.data.summary
           // setResume(summary)
           setIsReady(true)
-        } catch (err) {
-          console.log(err)
-        }
-      })
+        })
+      } catch (err) {
+        console.log(err)
+      }
     }
     getBackendResponse()
   }, [])
