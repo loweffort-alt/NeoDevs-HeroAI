@@ -39,7 +39,7 @@ export const loginAction = async (values: z.infer<typeof loginSchema>) => {
     if (error instanceof AuthError) {
       return { error: error.cause?.err?.message }
     }
-    return { error: "error 500" }
+    return { error }
   }
 }
 

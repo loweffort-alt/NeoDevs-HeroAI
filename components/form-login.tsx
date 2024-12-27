@@ -15,12 +15,12 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { loginAction } from "@/actions/auth-action"
-import { useState, useTransition } from "react"
+import { useTransition } from "react"
 import { useRouter } from "next/navigation"
 import { Loader2 } from "lucide-react"
 
 const FormLogin = () => {
-  const [error, setError] = useState<string | null>(null)
+  // const [error, setError] = useState<string | null>(null)
   const [isPending, startTransition] = useTransition()
   const router = useRouter()
 
@@ -33,11 +33,12 @@ const FormLogin = () => {
   })
 
   async function onSubmit(values: z.infer<typeof loginSchema>) {
-    setError(null)
+    // setError(null)
     startTransition(() => {
       loginAction(values).then(response => {
         if (response.error) {
-          setError(response.error);
+          console.error(response.error);
+          // setError(response.error);
         } else {
           router.push("/playground");
         }
@@ -77,9 +78,9 @@ const FormLogin = () => {
             </FormItem>
           )}
         />
-        {
-          error && <FormMessage> {error} </FormMessage>
-        }
+        {/* { */}
+        {/*   error && <FormMessage> {error} </FormMessage> */}
+        {/* } */}
         <Button type="submit" disabled={isPending}>
           {
             isPending ?
