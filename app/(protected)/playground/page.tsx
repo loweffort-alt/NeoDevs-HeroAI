@@ -26,6 +26,7 @@ import Playground from './playground'
 export default async function PlaygroundPage() {
   const session = await auth()
   const username = session?.user?.name
+  console.log("session", session)
 
   if (!session) {
     redirect("/login")
