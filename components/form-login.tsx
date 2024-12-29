@@ -32,52 +32,18 @@ const FormLogin = () => {
     }
   })
 
-  // async function onSubmit(values: z.infer<typeof loginSchema>) {
-  //   // setError(null)
-  //   startTransition(() => {
-  //     loginAction(values).then(response => {
-  //       if (response.error) {
-  //         console.error(response.error);
-  //         console.error(response.error.digest);
-  //         // setError(response.error);
-  //       } else {
-  //         console.log("form.login response", response);
-  //         router.push("/playground");
-  //       }
-  //     }).catch(error => {
-  //       console.log("error detectado en FormLogin");
-  //       console.log({ error });
-  //       throw error;
-  //     });
-  //   });
-  // }
-  //
-
   async function onSubmit(values: z.infer<typeof loginSchema>) {
-    try {
-      startTransition(() => {
-        console.log("Iniciando transición");
-        loginAction(values)
-          .then((response) => {
-            if (response.error) {
-              console.error("Error en la respuesta:", response.error);
-              console.error("Digest:", response.error.digest || "Digest no disponible");
-              // Aquí puedes manejar el error en el estado o mostrarlo al usuario
-              return;
-            }
-            console.log("Respuesta exitosa:", response);
-            router.push("/playground");
-          })
-          .catch((error) => {
-            console.error("Error en el proceso de login:", error);
-          });
-      });
-    } catch (error) {
-      console.error("Error detectado fuera de startTransition:", error);
-    }
+    startTransition(async () => {
+      console.log("start transition")
+      const response = await loginAction(values);
+      if (response.error) {
+        console.error("Error:", response.error);
+      } else {
+        console.log("Success:", response);
+        // router.push("/playground");
+      }
+    });
   }
-
-
 
   return (
     <Form {...form}>
