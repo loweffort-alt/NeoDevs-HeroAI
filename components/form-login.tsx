@@ -47,6 +47,7 @@ const FormLogin = () => {
       }).catch(error => {
         console.log("error detectado en FormLogin");
         console.log({ error });
+        throw error;
       });
     });
   }
