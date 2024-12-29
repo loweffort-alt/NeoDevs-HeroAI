@@ -41,9 +41,11 @@ const FormLogin = () => {
           console.error(response.error.digest);
           // setError(response.error);
         } else {
+          console.log("form.login response", response);
           router.push("/playground");
         }
       }).catch(error => {
+        console.log("error detectado en FormLogin");
         console.log({ error });
       });
     });
