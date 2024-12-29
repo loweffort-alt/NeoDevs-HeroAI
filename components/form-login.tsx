@@ -56,6 +56,7 @@ const FormLogin = () => {
   async function onSubmit(values: z.infer<typeof loginSchema>) {
     try {
       startTransition(() => {
+        console.log("Iniciando transición");
         loginAction(values)
           .then((response) => {
             if (response.error) {
