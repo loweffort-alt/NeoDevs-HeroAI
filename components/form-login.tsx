@@ -16,13 +16,13 @@ import {
 import { Input } from "@/components/ui/input"
 import { loginAction } from "@/actions/auth-action"
 import { useTransition } from "react"
-// import { useRouter } from "next/navigation"
+import { useRouter } from "next/navigation"
 import { Loader2 } from "lucide-react"
 
 const FormLogin = () => {
   // const [error, setError] = useState<string | null>(null)
   const [isPending, startTransition] = useTransition()
-  // const router = useRouter()
+  const router = useRouter()
 
   const form = useForm<z.infer<typeof loginSchema>>({
     resolver: zodResolver(loginSchema),
@@ -40,7 +40,7 @@ const FormLogin = () => {
         console.error("Error:", response.error);
       } else {
         console.log("Success:", response);
-        // router.push("/playground");
+        router.push("/playground");
       }
     });
   }
