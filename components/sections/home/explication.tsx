@@ -27,10 +27,10 @@ const Explication = () => {
         </div>
         ?
       </h2>
-      <p className="pt-8 mx-auto text-xl text-center font-normal leading-relaxed text-neutral-600 dark:invert fs521 lg:w-2/3">
+      <p className="pt-8 mx-auto text-xl text-center font-normal leading-relaxed text-muted-foreground dark:invert fs521 lg:w-2/3">
         Convierte tus apuntes y materiales de estudio en aliados inteligentes para el aprendizaje
       </p>
-      <div className="pt-12 pb-24 max-w-4xl mx-auto fsac4 md:px-1 px-3">
+      <div className="py-12 max-w-4xl mx-auto fsac4 md:px-1 px-3">
         <Card>
           <CardHeader>
             <CardTitle className='flex gap-4 items-center'>
