@@ -4,7 +4,7 @@ import "./home.css"
 
 const DevTools = () => {
   return (
-    <div className="flex flex-col gap-8 md:gap-16 p-4 md:p-10 items-center justify-center mx-auto my-20">
+    <div className="block-appear flex flex-col gap-8 md:gap-16 p-4 md:p-10 items-center justify-center mx-auto my-20">
       <h1 className="text-2xl font-semibold tracking-tighter text-center lg:text-5xl md:text-6xl">Tecnologías Usadas</h1>
       <div className="scroller">
         <div className="wea">

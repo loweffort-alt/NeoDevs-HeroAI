@@ -3,7 +3,7 @@ import React from 'react'
 
 const TeamSection = () => {
   return (
-    <div className="flex flex-col gap-16 md:p-10 items-center justify-center my-10 max-w-5xl xl:max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
+    <div className="block-appear flex flex-col gap-16 md:p-10 items-center justify-center my-10 max-w-5xl xl:max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
       <div>
         <h1 className="mb-8 text-3xl font-semibold tracking-tighter text-center lg:text-5xl md:text-6xl">
           Conoce a nuestro equipo
@@ -16,7 +16,7 @@ const TeamSection = () => {
         <TeamCard
           name='Darío Alexander Farfán Navarro'
           role='Fullstack Developer'
-          description='Creé HeroAI basandome en el método de estudio Cornell, soy el encargado del desarrollo web.'
+          description='Fullstack Developer. Creé HeroAI basandome en el método de estudio Cornell y la técnica de repetición espaciada.'
           imgSrc='/images/pfp/alex.jpeg'
           alt='Alex'
           linkedin='https://www.linkedin.com/in/alexfarfan/'
@@ -25,7 +25,7 @@ const TeamSection = () => {
         <TeamCard
           name='Rafael Castellanos Guzman'
           role='AI Engineer'
-          description='AI Engineer with a passion for learning and teaching. I love to build things and help others to learn how to do it.'
+          description='AI Engineer y Backend Developer. Creé HeroAI para ayudar a estudiantes a aprender de manera más eficiente.'
           imgSrc='/images/pfp/rafael.jpg'
           alt='Rafael'
           linkedin='https://www.linkedin.com/in/rafael-castellanos-guzman/'

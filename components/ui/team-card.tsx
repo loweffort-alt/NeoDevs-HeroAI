@@ -16,7 +16,7 @@ interface TeamCardProps {
 
 const TeamCard = ({ name, role, description, imgSrc, alt, linkedin, portfolio }: TeamCardProps) => {
   return (
-    <div className='flex gap-4 h-fit items-center max-md:flex-col'>
+    <div className='block-appear flex gap-4 h-fit items-center max-md:flex-col'>
       <div className='w-32 h-32 md:w-40 md:h-40 aspect-square bg-primary rounded-full'>
         <div className='w-full h-full aspect-square scale-95 rounded-full overflow-hidden'>
           <Image src={imgSrc} width={100} height={100} alt={alt} className='w-full h-full object-fit' />

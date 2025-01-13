@@ -11,7 +11,7 @@ import {
 const Explication = () => {
 
   return (
-    <div className=''>
+    <div className='block-appear'>
       <h2 id="learn" className="md:pt-20 mb-1 text-3xl font-semibold tracking-tighter text-center lg:text-7xl md:text-6xl">
         {"¿Tomar notas es suficiente para "}
         <div className='relative text-background dark:text-foreground inline-block'>
@@ -41,7 +41,6 @@ const Explication = () => {
                 ¿Que Solucionamos?
               </h3>
             </CardTitle>
-            <CardDescription>Card Description</CardDescription>
           </CardHeader>
           <CardContent>
             <p className="pt-2 value-text text-md  fkrr1">
@@ -59,7 +58,6 @@ const Explication = () => {
                 Lo que nos hace únicos
               </h3>
             </CardTitle>
-            <CardDescription>Card Description</CardDescription>
           </CardHeader>
           <CardContent>
             <ul className="pt-2 value-text text-md  fkrr1">
@@ -80,7 +78,6 @@ const Explication = () => {
                 ¿Cómo Funciona?
               </h3>
             </CardTitle>
-            <CardDescription>Card Description</CardDescription>
           </CardHeader>
           <CardContent>
             <p className="pt-2 value-text text-md fkrr1">
@@ -99,7 +96,6 @@ const Explication = () => {
                 Beneficios
               </h3>
             </CardTitle>
-            <CardDescription>Card Description</CardDescription>
           </CardHeader>
           <CardContent>
             <p className="pt-2 value-text text-md fkrr1">
