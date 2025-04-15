@@ -40,7 +40,7 @@ const DocPreview: React.FC<Url> = ({ url }) => {
 
   return (
     <div
-      className="h-full w-full rounded-xl overflow-auto overflow-x-hidden relative"
+      className="h-full w-fit rounded-xl relative -z-10"
     >
       <Document noData={noDoc} loading={loadingDoc} file={url} onLoadSuccess={onDocumentLoadSuccess}
         onLoadError={(error) => alert('Error while retrieving the outline! ' + error.message)}

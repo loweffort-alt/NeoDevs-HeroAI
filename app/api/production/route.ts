@@ -1,4 +1,5 @@
-const urlBackend = "https://hero-ai-backend.onrender.com/process-pdf/"
+// const urlBackend = "https://hero-ai-backend.onrender.com/process-pdf/"
+const urlBackend = "http://localhost:8000/process-pdf/"
 
 export async function POST(request: Request): Promise<Response> {
   try {

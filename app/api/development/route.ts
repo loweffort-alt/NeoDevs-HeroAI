@@ -2,7 +2,7 @@ export async function POST() {
   try {
     await new Promise((resolve) => setTimeout(resolve, 3000));
 
-    const data = await import("../../../public/backend-example.json")
+    const data = await import("../../../public/demo_example.json")
 
     return Response.json({ data })
   } catch (error) {

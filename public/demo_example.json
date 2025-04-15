@@ -1,0 +1,746 @@
+{
+  "pdfs": [
+    {
+      "pdf_id": "Urano",
+      "questions": [
+        {
+          "question_id": "779cbdcb-044b-4185-94e5-d277a66d008a",
+          "chunk_id": "2e1ae690-0f30-48bb-a291-b6e2eca12a91",
+          "question_dict": {
+            "question": "¿Qué gas en la atmósfera de Urano le da su color característico azul?",
+            "options": [
+              "Hidrógeno",
+              "Helio",
+              "Metano",
+              "Ammoníaco"
+            ],
+            "correct_answer": "Metano",
+            "topic": "Astronomía"
+          },
+          "reference_page": 3
+        },
+        {
+          "question_id": "4457d146-c48a-4e92-9569-c613e9360e43",
+          "chunk_id": "aba8b88b-3896-4be6-82cf-26b61d27f0ea",
+          "question_dict": {
+            "question": "¿Cuál es el color del anillo exterior mencionado en el texto?",
+            "options": [
+              "Rojo",
+              "Azul",
+              "Verde",
+              "Amarillo"
+            ],
+            "correct_answer": "Azul",
+            "topic": "Anillos del sistema solar"
+          },
+          "reference_page": 4
+        },
+        {
+          "question_id": "b2d1c8cd-7fa9-4c22-8c92-b4655c2cf15d",
+          "chunk_id": "50934841-1da4-4c23-86f6-8161c284c6ce",
+          "question_dict": {
+            "question": "¿Cómo se llaman los satélites que orbitan alrededor de Urano?",
+            "options": [
+              "Personajes de la mitología griega",
+              "Personajes de obras de William Shakespeare y Alexander Pope",
+              "Planetas enanos del sistema solar",
+              "Nombres de estrellas"
+            ],
+            "correct_answer": "Personajes de obras de William Shakespeare y Alexander Pope",
+            "topic": "Cuerpos celestes"
+          },
+          "reference_page": 4
+        },
+        {
+          "question_id": "c122f75c-63f5-4562-9f1b-24d76adaa746",
+          "chunk_id": "ecb2dd03-d871-42f4-8534-a80c8be99393",
+          "question_dict": {
+            "question": "¿Quién es el autor de la imagen titulada \"Uranus and Rings - Voyager\"?",
+            "options": [
+              "jccwrt",
+              "Voyager",
+              "Creative Commons",
+              "Flickr"
+            ],
+            "correct_answer": "jccwrt",
+            "topic": "Atribuciones de contenido"
+          },
+          "reference_page": 5
+        },
+        {
+          "question_id": "507900f9-d810-4321-997e-2b3962b38e79",
+          "chunk_id": "9d32f482-6d22-4387-bcc8-380c8dd84deb",
+          "question_dict": {
+            "question": "¿Qué planeta se analiza en profundidad en el artículo de NASA mencionado?",
+            "options": [
+              "Mercurio",
+              "Venus",
+              "Uranus",
+              "Neptuno"
+            ],
+            "correct_answer": "Uranus",
+            "topic": "Exploración del Sistema Solar"
+          },
+          "reference_page": 5
+        },
+        {
+          "question_id": "2c85d3ea-d83a-46ce-a824-c41b4179bad6",
+          "chunk_id": "ac901070-88e1-439b-a9a3-c903f03f4bc1",
+          "question_dict": {
+            "question": "¿Cuál es la principal característica del eje de rotación de Urano en comparación con otros planetas del sistema solar?",
+            "options": [
+              "Está inclinado a 45 grados",
+              "Está inclinado a 90 grados",
+              "Está casi en ángulo recto a su órbita",
+              "Está en ángulo recto a su órbita"
+            ],
+            "correct_answer": "Está casi en ángulo recto a su órbita",
+            "topic": "Astronomía"
+          },
+          "reference_page": 2
+        },
+        {
+          "question_id": "8ae04197-e153-4b1b-a412-c6701501ad8f",
+          "chunk_id": "9fd6802a-83bd-421d-9092-81714973d61f",
+          "question_dict": {
+            "question": "¿Qué tipo de viento predomina en el ecuador de Urano?",
+            "options": [
+              "Progrado",
+              "Retrogrado",
+              "Nulo",
+              "Variable"
+            ],
+            "correct_answer": "Retrogrado",
+            "topic": "Atmósfera de Urano"
+          },
+          "reference_page": 3
+        },
+        {
+          "question_id": "449e44f6-5c3d-4863-9173-d969f18f7de4",
+          "chunk_id": "a0ab4a78-d087-47d9-be8c-e45db44b8992",
+          "question_dict": {
+            "question": "Who discovered Uranus?",
+            "options": [
+              "Johann Elert Bode",
+              "William Herschel",
+              "Galileo Galilei",
+              "Isaac Newton"
+            ],
+            "correct_answer": "William Herschel",
+            "topic": "Astronomy"
+          },
+          "reference_page": 2
+        },
+        {
+          "question_id": "2afa853d-9f15-4d2c-8c89-1b91e1235bae",
+          "chunk_id": "9a51fdb1-22a2-4880-bba1-f9d44611a2b7",
+          "question_dict": {
+            "question": "¿Cuál es el principal componente del manto de Uranus que contribuye a su color azul-verde?",
+            "options": [
+              "A) Amoníaco",
+              "B) Metano",
+              "C) Agua",
+              "D) Helio"
+            ],
+            "correct_answer": "B) Metano",
+            "topic": "Estructura y características de Uranus"
+          },
+          "reference_page": 3
+        }
+      ],
+      "summary": "Urano, el séptimo planeta del sistema solar, es un gigante gaseoso y de hielo conocido por su atmósfera compuesta principalmente de hidrógeno, helio y metano, lo que le da un color azul-verde. Carece de superficie sólida y presenta extremas condiciones de temperatura y presión que complican su exploración. Su inclinación única de eje provoca estaciones extremas y rota en dirección opuesta a la mayoría de los planetas, reflejando su compleja historia de formación hace 4.5 mil millones de años. También posee un sistema de lunas y anillos con características diversas, y su entorno es inhóspito para la vida. Una imagen representativa de Urano y sus anillos fue tomada por el fotógrafo jccwrt y está bajo licencia Creative Commons."
+    },
+    {
+      "pdf_id": "Las Cruzadas",
+      "questions": [
+        {
+          "question_dict": {
+            "question": "¿Quién fue el Papa que convocó la Primera Cruzada en 1095?",
+            "options": [
+              "Gregorio VII",
+              "Urbano II",
+              "Inocencio III",
+              "Eugenio III"
+            ],
+            "correct_answer": "Urbano II",
+            "topic": "Historia medieval"
+          },
+          "reference_page": 1
+        },
+        {
+          "question_dict": {
+            "question": "¿Cuál fue la batalla en 1071 donde los turcos selyúcidas derrotaron al ejército bizantino?",
+            "options": [
+              "Batalla de Hattin",
+              "Batalla de Manzikert",
+              "Batalla de Damieta",
+              "Batalla de Acre"
+            ],
+            "correct_answer": "Batalla de Manzikert",
+            "topic": "Historia medieval"
+          },
+          "reference_page": 2
+        },
+        {
+          "question_dict": {
+            "question": "¿Qué ciudad fue conquistada por los cruzados en 1099 durante la Primera Cruzada, marcando su éxito final?",
+            "options": [
+              "Antioquía",
+              "Damasco",
+              "Jerusalén",
+              "Edesa"
+            ],
+            "correct_answer": "Jerusalén",
+            "topic": "Historia medieval"
+          },
+          "reference_page": 3
+        },
+        {
+          "question_dict": {
+            "question": "¿Qué líder musulmán unificó a los estados islámicos y reconquistó Jerusalén en 1187?",
+            "options": [
+              "Zengi",
+              "Saladino",
+              "Nur al-Din",
+              "Alejo Comneno"
+            ],
+            "correct_answer": "Saladino",
+            "topic": "Historia medieval"
+          },
+          "reference_page": 5
+        },
+        {
+          "question_dict": {
+            "question": "¿Qué Cruzada terminó con el saqueo de Constantinopla en 1204 en lugar de dirigirse a Tierra Santa?",
+            "options": [
+              "Tercera Cruzada",
+              "Cuarta Cruzada",
+              "Quinta Cruzada",
+              "Sexta Cruzada"
+            ],
+            "correct_answer": "Cuarta Cruzada",
+            "topic": "Historia medieval"
+          },
+          "reference_page": 6
+        },
+        {
+          "question_dict": {
+            "question": "¿Qué rey de Inglaterra participó en la Tercera Cruzada y ganó el apodo 'Corazón de León'?",
+            "options": [
+              "Federico Barbarroja",
+              "Luis IX",
+              "Ricardo I",
+              "Felipe II"
+            ],
+            "correct_answer": "Ricardo I",
+            "topic": "Historia medieval"
+          },
+          "reference_page": 5
+        },
+        {
+          "question_dict": {
+            "question": "¿Qué orden militar cristiana jugó un papel clave en las Cruzadas Bálticas?",
+            "options": [
+              "Caballeros Templarios",
+              "Orden Teutónica",
+              "Caballeros Hospitalarios",
+              "Orden de Santiago"
+            ],
+            "correct_answer": "Orden Teutónica",
+            "topic": "Historia medieval"
+          },
+          "reference_page": 6
+        },
+        {
+          "question_dict": {
+            "question": "¿Qué Cruzada fue liderada por Luis IX de Francia y terminó con su captura en Egipto?",
+            "options": [
+              "Quinta Cruzada",
+              "Séptima Cruzada",
+              "Sexta Cruzada",
+              "Octava Cruzada"
+            ],
+            "correct_answer": "Séptima Cruzada",
+            "topic": "Historia medieval"
+          },
+          "reference_page": 7
+        },
+        {
+          "question_dict": {
+            "question": "¿Qué evento marcó el fin definitivo de los estados cruzados en Tierra Santa en 1291?",
+            "options": [
+              "Caída de Antioquía",
+              "Caída de Acre",
+              "Caída de Trípoli",
+              "Caída de Jerusalén"
+            ],
+            "correct_answer": "Caída de Acre",
+            "topic": "Historia medieval"
+          },
+          "reference_page": 7
+        },
+        {
+          "question_dict": {
+            "question": "¿Qué Cruzada fue conocida como la 'Cruzada de los Niños' debido a la participación de jóvenes y niños?",
+            "options": [
+              "Tercera Cruzada",
+              "Cuarta Cruzada",
+              "Cruzada de 1212",
+              "Sexta Cruzada"
+            ],
+            "correct_answer": "Cruzada de 1212",
+            "topic": "Historia medieval"
+          },
+          "reference_page": 6
+        }
+      ],
+      "summary": "Las Cruzadas fueron una serie de campañas militares (siglos XI-XIII) impulsadas por la Iglesia cristiana para recuperar Tierra Santa del dominio musulmán. Iniciadas por el Papa Urbano II en 1095, la Primera Cruzada logró conquistar Jerusalén (1099), pero posteriores expediciones, como la Segunda (1147-1149) y Tercera Cruzada (1189-1192, con Ricardo Corazón de León), fracasaron ante líderes como Saladino. La Cuarta Cruzada (1202-1204) desvió su objetivo a Constantinopla, saqueándola y debilitando al Imperio Bizantino. Cruzadas posteriores, como la Séptima (1248-1254) de Luis IX de Francia, terminaron en derrotas. Aunque surgieron órdenes militares (Templarios, Teutónicos) y se expandió el comercio, las Cruzadas no lograron mantener el control de Jerusalén y finalizaron en 1291 con la caída de Acre, dejando un legado de conflicto religioso y cultural entre Oriente y Occidente."
+    },
+    {
+      "pdf_id": "Euler",
+      "questions": [
+        {
+          "question_id": "779cbdcb-044b-4185-94e5-d277a66d008a",
+          "chunk_id": "2e1ae690-0f30-48bb-a291-b6e2eca12a91",
+          "question_dict": {
+            "question": "¿Euler?",
+            "options": [
+              "Hidrógeno",
+              "Helio",
+              "Metano",
+              "Ammoníaco"
+            ],
+            "correct_answer": "Metano",
+            "topic": "Astronomía"
+          },
+          "reference_page": 3
+        },
+        {
+          "question_id": "4457d146-c48a-4e92-9569-c613e9360e43",
+          "chunk_id": "aba8b88b-3896-4be6-82cf-26b61d27f0ea",
+          "question_dict": {
+            "question": "¿Cuál es el color del anillo exterior mencionado en el texto?",
+            "options": [
+              "Rojo",
+              "Azul",
+              "Verde",
+              "Amarillo"
+            ],
+            "correct_answer": "Azul",
+            "topic": "Anillos del sistema solar"
+          },
+          "reference_page": 4
+        },
+        {
+          "question_id": "b2d1c8cd-7fa9-4c22-8c92-b4655c2cf15d",
+          "chunk_id": "50934841-1da4-4c23-86f6-8161c284c6ce",
+          "question_dict": {
+            "question": "¿Cómo se llaman los satélites que orbitan alrededor de Urano?",
+            "options": [
+              "Personajes de la mitología griega",
+              "Personajes de obras de William Shakespeare y Alexander Pope",
+              "Planetas enanos del sistema solar",
+              "Nombres de estrellas"
+            ],
+            "correct_answer": "Personajes de obras de William Shakespeare y Alexander Pope",
+            "topic": "Cuerpos celestes"
+          },
+          "reference_page": 4
+        },
+        {
+          "question_id": "c122f75c-63f5-4562-9f1b-24d76adaa746",
+          "chunk_id": "ecb2dd03-d871-42f4-8534-a80c8be99393",
+          "question_dict": {
+            "question": "¿Quién es el autor de la imagen titulada \"Uranus and Rings - Voyager\"?",
+            "options": [
+              "jccwrt",
+              "Voyager",
+              "Creative Commons",
+              "Flickr"
+            ],
+            "correct_answer": "jccwrt",
+            "topic": "Atribuciones de contenido"
+          },
+          "reference_page": 5
+        },
+        {
+          "question_id": "507900f9-d810-4321-997e-2b3962b38e79",
+          "chunk_id": "9d32f482-6d22-4387-bcc8-380c8dd84deb",
+          "question_dict": {
+            "question": "¿Qué planeta se analiza en profundidad en el artículo de NASA mencionado?",
+            "options": [
+              "Mercurio",
+              "Venus",
+              "Uranus",
+              "Neptuno"
+            ],
+            "correct_answer": "Uranus",
+            "topic": "Exploración del Sistema Solar"
+          },
+          "reference_page": 5
+        },
+        {
+          "question_id": "2c85d3ea-d83a-46ce-a824-c41b4179bad6",
+          "chunk_id": "ac901070-88e1-439b-a9a3-c903f03f4bc1",
+          "question_dict": {
+            "question": "¿Cuál es la principal característica del eje de rotación de Urano en comparación con otros planetas del sistema solar?",
+            "options": [
+              "Está inclinado a 45 grados",
+              "Está inclinado a 90 grados",
+              "Está casi en ángulo recto a su órbita",
+              "Está en ángulo recto a su órbita"
+            ],
+            "correct_answer": "Está casi en ángulo recto a su órbita",
+            "topic": "Astronomía"
+          },
+          "reference_page": 2
+        },
+        {
+          "question_id": "8ae04197-e153-4b1b-a412-c6701501ad8f",
+          "chunk_id": "9fd6802a-83bd-421d-9092-81714973d61f",
+          "question_dict": {
+            "question": "¿Qué tipo de viento predomina en el ecuador de Urano?",
+            "options": [
+              "Progrado",
+              "Retrogrado",
+              "Nulo",
+              "Variable"
+            ],
+            "correct_answer": "Retrogrado",
+            "topic": "Atmósfera de Urano"
+          },
+          "reference_page": 3
+        },
+        {
+          "question_id": "449e44f6-5c3d-4863-9173-d969f18f7de4",
+          "chunk_id": "a0ab4a78-d087-47d9-be8c-e45db44b8992",
+          "question_dict": {
+            "question": "Who discovered Uranus?",
+            "options": [
+              "Johann Elert Bode",
+              "William Herschel",
+              "Galileo Galilei",
+              "Isaac Newton"
+            ],
+            "correct_answer": "William Herschel",
+            "topic": "Astronomy"
+          },
+          "reference_page": 2
+        },
+        {
+          "question_id": "2afa853d-9f15-4d2c-8c89-1b91e1235bae",
+          "chunk_id": "9a51fdb1-22a2-4880-bba1-f9d44611a2b7",
+          "question_dict": {
+            "question": "¿Cuál es el principal componente del manto de Uranus que contribuye a su color azul-verde?",
+            "options": [
+              "A) Amoníaco",
+              "B) Metano",
+              "C) Agua",
+              "D) Helio"
+            ],
+            "correct_answer": "B) Metano",
+            "topic": "Estructura y características de Uranus"
+          },
+          "reference_page": 3
+        }
+      ],
+      "summary": "Urano, el séptimo planeta del sistema solar, es un gigante gaseoso y de hielo conocido por su atmósfera compuesta principalmente de hidrógeno, helio y metano, lo que le da un color azul-verde. Carece de superficie sólida y presenta extremas condiciones de temperatura y presión que complican su exploración. Su inclinación única de eje provoca estaciones extremas y rota en dirección opuesta a la mayoría de los planetas, reflejando su compleja historia de formación hace 4.5 mil millones de años. También posee un sistema de lunas y anillos con características diversas, y su entorno es inhóspito para la vida. Una imagen representativa de Urano y sus anillos fue tomada por el fotógrafo jccwrt y está bajo licencia Creative Commons."
+    },
+    {
+      "pdf_id": "Djakarta",
+      "questions": [
+        {
+          "question_dict": {
+            "question": "¿Cuál es el objetivo principal de la investigación presentada en el artículo?",
+            "options": [
+              "Desarrollar un nuevo algoritmo de búsqueda de rutas",
+              "Mejorar la precisión de los mapas digitales existentes",
+              "Determinar la ruta más corta al hospital más cercano en situaciones de emergencia",
+              "Analizar el tráfico en la ciudad de Magelang"
+            ],
+            "correct_answer": "Determinar la ruta más corta al hospital más cercano en situaciones de emergencia",
+            "topic": "Aplicación de algoritmos"
+          },
+          "reference_page": 1
+        },
+        {
+          "question_dict": {
+            "question": "¿Qué algoritmo se utiliza en la investigación para encontrar la ruta más corta?",
+            "options": [
+              "Algoritmo de Bellman-Ford",
+              "Algoritmo de Floyd-Warshall",
+              "Algoritmo de Dijkstra",
+              "Algoritmo A*"
+            ],
+            "correct_answer": "Algoritmo de Dijkstra",
+            "topic": "Algoritmos de búsqueda"
+          },
+          "reference_page": 1
+        },
+        {
+          "question_dict": {
+            "question": "¿Qué tecnología se menciona como fundamental para el funcionamiento del sistema propuesto?",
+            "options": [
+              "Realidad aumentada",
+              "Inteligencia artificial",
+              "Sistemas de posicionamiento global (GPS)",
+              "Blockchain"
+            ],
+            "correct_answer": "Sistemas de posicionamiento global (GPS)",
+            "topic": "Tecnologías de localización"
+          },
+          "reference_page": 8
+        },
+        {
+          "question_dict": {
+            "question": "¿Cuál es la distancia calculada más corta obtenida en la investigación?",
+            "options": [
+              "0.133 km",
+              "0.245 km",
+              "0.476 km",
+              "0.580 km"
+            ],
+            "correct_answer": "0.476 km",
+            "topic": "Resultados de la investigación"
+          },
+          "reference_page": 7
+        },
+        {
+          "question_dict": {
+            "question": "¿Qué tipo de gráfico se utiliza para representar las rutas en el sistema?",
+            "options": [
+              "Gráfico no dirigido",
+              "Gráfico dirigido",
+              "Gráfico ponderado",
+              "Gráfico cíclico"
+            ],
+            "correct_answer": "Gráfico dirigido",
+            "topic": "Representación de datos"
+          },
+          "reference_page": 5
+        },
+        {
+          "question_dict": {
+            "question": "¿Qué actor del sistema puede realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar)?",
+            "options": [
+              "Usuario",
+              "Administrador",
+              "Ambos (Usuario y Administrador)",
+              "Ninguno"
+            ],
+            "correct_answer": "Administrador",
+            "topic": "Roles del sistema"
+          },
+          "reference_page": 3
+        },
+        {
+          "question_dict": {
+            "question": "¿Qué tabla en el diseño de la base de datos tiene una relación 1:n con la tabla de nodos?",
+            "options": [
+              "Tabla de usuarios",
+              "Tabla de administradores",
+              "Tabla de gráficos",
+              "Tabla de hospitales"
+            ],
+            "correct_answer": "Tabla de administradores",
+            "topic": "Diseño de base de datos"
+          },
+          "reference_page": 3
+        },
+        {
+          "question_dict": {
+            "question": "¿Qué hospital se utiliza como ejemplo en los cálculos del algoritmo de Dijkstra?",
+            "options": [
+              "Hospital Islámico de Magelang",
+              "Hospital Regional Tidar",
+              "Hospital Gladiool Mother and Child",
+              "Hospital Psiquiátrico Prof. Dr. Soerojo"
+            ],
+            "correct_answer": "Hospital Gladiool Mother and Child",
+            "topic": "Ejemplos de aplicación"
+          },
+          "reference_page": 5
+        },
+        {
+          "question_dict": {
+            "question": "¿Qué característica del algoritmo de Dijkstra se destaca en la conclusión del artículo?",
+            "options": [
+              "Su capacidad para manejar grandes volúmenes de datos",
+              "Su velocidad de procesamiento en tiempo real",
+              "Su habilidad para encontrar la ruta con el menor peso sin necesidad de filtros adicionales",
+              "Su adaptabilidad a diferentes tipos de redes"
+            ],
+            "correct_answer": "Su habilidad para encontrar la ruta con el menor peso sin necesidad de filtros adicionales",
+            "topic": "Conclusiones"
+          },
+          "reference_page": 9
+        },
+        {
+          "question_dict": {
+            "question": "¿Qué se utiliza para determinar las ubicaciones exactas de los hospitales en el sistema?",
+            "options": [
+              "Direcciones postales",
+              "Coordenadas de longitud y latitud",
+              "Códigos postales",
+              "Puntos de referencia cercanos"
+            ],
+            "correct_answer": "Coordenadas de longitud y latitud",
+            "topic": "Tecnologías de localización"
+          },
+          "reference_page": 9
+        }
+      ],
+      "summary": "El estudio implementa el algoritmo de Dijkstra para determinar la ruta más corta hacia hospitales en el distrito de Magelang, Indonesia, optimizando tiempos críticos en emergencias. Utilizando mapas digitales y datos de GPS, el sistema calcula distancias entre nodos (puntos geográficos) para identificar el trayecto óptimo, como demostró con un resultado de 0.476 km hacia el Hospital Gladiool. La investigación incluye un diseño de base de datos relacional (EER) y roles diferenciados: administradores gestionan datos (CRUD) mientras usuarios solo consultan rutas. Validado con casos reales, el algoritmo destaca por su eficiencia al seleccionar automáticamente la ruta mínima sin filtros adicionales, mejorando sistemas previos. La conclusión subraya su utilidad para emergencias médicas, precisión en coordenadas (latitud/longitud) y escalabilidad potencial."
+    },
+    {
+      "pdf_id": "Earth",
+      "questions": [
+        {
+          "question_id": "779cbdcb-044b-4185-94e5-d277a66d008a",
+          "chunk_id": "2e1ae690-0f30-48bb-a291-b6e2eca12a91",
+          "question_dict": {
+            "question": "¿Earth?",
+            "options": [
+              "Hidrógeno",
+              "Helio",
+              "Metano",
+              "Ammoníaco"
+            ],
+            "correct_answer": "Metano",
+            "topic": "Astronomía"
+          },
+          "reference_page": 3
+        },
+        {
+          "question_id": "4457d146-c48a-4e92-9569-c613e9360e43",
+          "chunk_id": "aba8b88b-3896-4be6-82cf-26b61d27f0ea",
+          "question_dict": {
+            "question": "¿Cuál es el color del anillo exterior mencionado en el texto?",
+            "options": [
+              "Rojo",
+              "Azul",
+              "Verde",
+              "Amarillo"
+            ],
+            "correct_answer": "Azul",
+            "topic": "Anillos del sistema solar"
+          },
+          "reference_page": 4
+        },
+        {
+          "question_id": "b2d1c8cd-7fa9-4c22-8c92-b4655c2cf15d",
+          "chunk_id": "50934841-1da4-4c23-86f6-8161c284c6ce",
+          "question_dict": {
+            "question": "¿Cómo se llaman los satélites que orbitan alrededor de Urano?",
+            "options": [
+              "Personajes de la mitología griega",
+              "Personajes de obras de William Shakespeare y Alexander Pope",
+              "Planetas enanos del sistema solar",
+              "Nombres de estrellas"
+            ],
+            "correct_answer": "Personajes de obras de William Shakespeare y Alexander Pope",
+            "topic": "Cuerpos celestes"
+          },
+          "reference_page": 4
+        },
+        {
+          "question_id": "c122f75c-63f5-4562-9f1b-24d76adaa746",
+          "chunk_id": "ecb2dd03-d871-42f4-8534-a80c8be99393",
+          "question_dict": {
+            "question": "¿Quién es el autor de la imagen titulada \"Uranus and Rings - Voyager\"?",
+            "options": [
+              "jccwrt",
+              "Voyager",
+              "Creative Commons",
+              "Flickr"
+            ],
+            "correct_answer": "jccwrt",
+            "topic": "Atribuciones de contenido"
+          },
+          "reference_page": 5
+        },
+        {
+          "question_id": "507900f9-d810-4321-997e-2b3962b38e79",
+          "chunk_id": "9d32f482-6d22-4387-bcc8-380c8dd84deb",
+          "question_dict": {
+            "question": "¿Qué planeta se analiza en profundidad en el artículo de NASA mencionado?",
+            "options": [
+              "Mercurio",
+              "Venus",
+              "Uranus",
+              "Neptuno"
+            ],
+            "correct_answer": "Uranus",
+            "topic": "Exploración del Sistema Solar"
+          },
+          "reference_page": 5
+        },
+        {
+          "question_id": "2c85d3ea-d83a-46ce-a824-c41b4179bad6",
+          "chunk_id": "ac901070-88e1-439b-a9a3-c903f03f4bc1",
+          "question_dict": {
+            "question": "¿Cuál es la principal característica del eje de rotación de Urano en comparación con otros planetas del sistema solar?",
+            "options": [
+              "Está inclinado a 45 grados",
+              "Está inclinado a 90 grados",
+              "Está casi en ángulo recto a su órbita",
+              "Está en ángulo recto a su órbita"
+            ],
+            "correct_answer": "Está casi en ángulo recto a su órbita",
+            "topic": "Astronomía"
+          },
+          "reference_page": 2
+        },
+        {
+          "question_id": "8ae04197-e153-4b1b-a412-c6701501ad8f",
+          "chunk_id": "9fd6802a-83bd-421d-9092-81714973d61f",
+          "question_dict": {
+            "question": "¿Qué tipo de viento predomina en el ecuador de Urano?",
+            "options": [
+              "Progrado",
+              "Retrogrado",
+              "Nulo",
+              "Variable"
+            ],
+            "correct_answer": "Retrogrado",
+            "topic": "Atmósfera de Urano"
+          },
+          "reference_page": 3
+        },
+        {
+          "question_id": "449e44f6-5c3d-4863-9173-d969f18f7de4",
+          "chunk_id": "a0ab4a78-d087-47d9-be8c-e45db44b8992",
+          "question_dict": {
+            "question": "Who discovered Uranus?",
+            "options": [
+              "Johann Elert Bode",
+              "William Herschel",
+              "Galileo Galilei",
+              "Isaac Newton"
+            ],
+            "correct_answer": "William Herschel",
+            "topic": "Astronomy"
+          },
+          "reference_page": 2
+        },
+        {
+          "question_id": "2afa853d-9f15-4d2c-8c89-1b91e1235bae",
+          "chunk_id": "9a51fdb1-22a2-4880-bba1-f9d44611a2b7",
+          "question_dict": {
+            "question": "¿Cuál es el principal componente del manto de Uranus que contribuye a su color azul-verde?",
+            "options": [
+              "A) Amoníaco",
+              "B) Metano",
+              "C) Agua",
+              "D) Helio"
+            ],
+            "correct_answer": "B) Metano",
+            "topic": "Estructura y características de Uranus"
+          },
+          "reference_page": 3
+        }
+      ],
+      "summary": "Urano, el séptimo planeta del sistema solar, es un gigante gaseoso y de hielo conocido por su atmósfera compuesta principalmente de hidrógeno, helio y metano, lo que le da un color azul-verde. Carece de superficie sólida y presenta extremas condiciones de temperatura y presión que complican su exploración. Su inclinación única de eje provoca estaciones extremas y rota en dirección opuesta a la mayoría de los planetas, reflejando su compleja historia de formación hace 4.5 mil millones de años. También posee un sistema de lunas y anillos con características diversas, y su entorno es inhóspito para la vida. Una imagen representativa de Urano y sus anillos fue tomada por el fotógrafo jccwrt y está bajo licencia Creative Commons."
+    }
+  ]
+}

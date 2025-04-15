@@ -14,7 +14,10 @@ const ChatBot: React.FC = () => {
 
     try {
       // Realiza la petición al endpoint del backend
-      const response = await axios.post("https://hero-ai-backend.onrender.com/chat/", {
+      // const response = await axios.post("https://hero-ai-backend.onrender.com/chat/", {
+      //   user_question: userMessage,
+      // });
+      const response = await axios.post("http://localhost:8000/chat/", {
         user_question: userMessage,
       });
 
@@ -27,7 +30,7 @@ const ChatBot: React.FC = () => {
       console.error("Error al comunicarse con el chatbot:", error);
       setChatHistory((prev) => [
         ...prev,
-        { role: "bot", content: "Lo siento, ocurrió un error al procesar tu mensaje." },
+        { role: "bot", content: "Lo siento, en la versión Demo no se puede chatear" },
       ]);
     }
 

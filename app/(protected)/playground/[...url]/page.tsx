@@ -13,7 +13,7 @@ import {
   ResizablePanelGroup,
 } from "@/components/ui/resizable"
 
-const Playground = () => {
+const Playground = ({ demo = false }) => {
   const [urlDoc, setUrlDoc] = useState("")
   const router = useRouter()
 
@@ -39,8 +39,10 @@ const Playground = () => {
             className="relative flex justify-center rounded-xl overflow-y-auto overflow-x-hidden"
           >
             <div className="flex flex-col relative gap-8 overflow-y-auto overflow-x-hidden">
-              <Button variant="destructive" className='fixed right-5 top-5 z-40' onClick={handleClickChangeDoc}>
-                Cargar Otro
+              <Button variant="secondary" className='fixed right-5 top-5 z-40' onClick={handleClickChangeDoc}>
+                {
+                  demo ? "Siguiente Doc" : "Cargar Otro"
+                }
               </Button>
               {urlDoc && <DocPreview url={urlDoc} />}
             </div>

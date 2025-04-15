@@ -20,7 +20,7 @@ const TeamSection = () => {
           imgSrc='/images/pfp/alex.jpeg'
           alt='Alex'
           linkedin='https://www.linkedin.com/in/alexfarfan/'
-          portfolio='https://alexfarfan.site/'
+          portfolio='https://alexfarfan.me/'
         />
         <TeamCard
           name='Rafael Castellanos Guzman'

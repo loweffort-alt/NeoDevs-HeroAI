@@ -9,8 +9,8 @@ const OptionsHeader = () => {
         <Link href="/playground" className="mr-0 md:mr-11 cursor-pointer font-semibold tr04 max-md:text-3xl">
           Playground
         </Link>
-        <Link href="/dashboard" className="mr-0 md:mr-11 cursor-pointer font-semibold tr04 max-md:text-3xl">
-          Dashboard
+        <Link href="/demo" className="mr-0 md:mr-11 cursor-pointer font-semibold tr04 max-md:text-3xl">
+          Demo
         </Link>
         <Link href="#about" className="mr-0 md:mr-11 cursor-pointer font-semibold tr04 max-md:text-3xl">
           About us

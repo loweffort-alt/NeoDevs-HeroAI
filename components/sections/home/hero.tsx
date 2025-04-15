@@ -21,13 +21,22 @@ const Hero = () => {
         </h2>
         <div className="text-center">
           <Button
-            variant="secondary"
-            className="inline-flex items-center py-7 px-3 md:p-7 font-semibold transition duration-500 ease-in-out text-md md:mt-0 bg-foreground text-background hover:text-foreground hover:bg-background"
+            className="inline-flex items-center py-7 px-3 md:p-7 font-semibold transition duration-500 ease-in-out text-md md:mt-0 border bg-foreground text-background hover:text-foreground hover:bg-primary hover:border-foreground mr-4"
           >
             <Link
               href="/playground"
             >
-              Pruebalo ahora
+              Iniciar sesión
+            </Link>
+          </Button>
+          <Button
+            variant="outline"
+            className="inline-flex items-center py-7 px-3 md:p-7 font-semibold transition duration-500 ease-in-out text-md md:mt-0 border border-background hover:border-white"
+          >
+            <Link
+              href="/demo"
+            >
+              Probar Demo!
             </Link>
           </Button>
         </div>

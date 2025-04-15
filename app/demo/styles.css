@@ -1,0 +1,73 @@
+#app {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.neg-shadow {
+  box-shadow: 0 -1px 3px 0 rgb(0 0 0 / 0.1), 0 -1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  height: 80vh;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.chatHistory {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #aaa transparent;
+}
+
+.chatHistory::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chatHistory::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 4px;
+}
+
+.userMessage {
+  align-self: flex-end;
+  padding: 10px 14px;
+  border-radius: 16px;
+  margin: 8px 0;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.botMessage {
+  align-self: flex-start;
+  padding: 10px 14px;
+  border-radius: 16px;
+  margin: 8px 0;
+  max-width: 70%;
+  word-wrap: break-word;
+}
