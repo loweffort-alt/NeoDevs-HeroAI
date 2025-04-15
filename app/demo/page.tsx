@@ -12,11 +12,7 @@ import { Button } from '@/components/ui/button'
 import DocPreview from '@/components/doc-preview'
 import { useState } from 'react'
 
-type PlaygroundProps = {
-  username: string
-}
-
-const DemoPlayground: React.FC<PlaygroundProps> = () => {
+const DemoPlayground = () => {
   const [doc, setDoc] = useState(0)
 
   const urlDoc = [
