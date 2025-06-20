@@ -44,16 +44,21 @@ Somos un equipo de dos integrantes apasionados por la tecnología y la innovaci�
    ```
 3. Configura tu variable de entorno en un archivo `.env.local`:
    ```txt   
-    EDGE_STORE_ACCESS_KEY=TBGjLisOAxzUWnYL3HTHZAhD2qEANyZD
-    EDGE_STORE_SECRET_KEY=PRLLPdZEWy4zfWlMvarVAa4kRkvaqAffE6oOywUTBolqxjFl
+    EDGE_STORE_ACCESS_KEY=******
+    EDGE_STORE_SECRET_KEY=******
     AUTH_SECRET=heroai
-    DATABASE_URL=postgresql://postgres:GkZg6hevq1VcsW@db.ohlbhtnxgvxhdnjrtkil.supabase.co:5432/postgres
+    DATABASE_URL=******
    ```
-4. Inicia el servidor de desarrollo:
+4. Haz la migración con Prisma:
+   ```bash
+   npx prisma migrate dev --name init
+   ```
+   > Asegúrate de tener configurada tu base de datos y las credenciales correctas en el archivo `.env.local`.
+5. Inicia el servidor de desarrollo:
    ```bash
    npm run dev
    ```
-5. Accede al frontend en [http://localhost:3000](http://localhost:3000).
+6. Accede al frontend en [http://localhost:3000](http://localhost:3000).
 
 ### **Backend**
 Sigue las instrucciones disponibles en el repositorio del backend:  
