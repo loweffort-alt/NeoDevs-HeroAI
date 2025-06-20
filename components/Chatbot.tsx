@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react"
 import axios from "axios";
 import { Button } from "@/components/ui/button"
+import ReactMarkdown from 'react-markdown'
 
 const ChatBot: React.FC = () => {
   const [userMessage, setUserMessage] = useState<string>(""); // Mensaje del usuario
@@ -21,10 +22,12 @@ const ChatBot: React.FC = () => {
         user_input: userMessage,
       });
 
+      const formattedResponse = response.data.response.replace(/<think>(.*?)<\/think>/g, '').trim();
+
       // Añade la respuesta del bot al historial
       setChatHistory((prev) => [
         ...prev,
-        { role: "bot", content: response.data.response },
+        { role: "bot", content: formattedResponse },
       ]);
     } catch (error) {
       console.error("Error al comunicarse con el chatbot:", error);
@@ -56,7 +59,9 @@ const ChatBot: React.FC = () => {
               message.role === "user" ? "userMessage border-2" : "botMessage bg-foreground text-background"
             }
           >
-            {message.content}
+            <ReactMarkdown>
+              {message.content}
+            </ReactMarkdown>
           </div>
         ))}
       </div>

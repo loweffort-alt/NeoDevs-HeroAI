@@ -2,7 +2,7 @@
 
 import './styles.css'
 import { QuestionsDemo } from '@/components/sections/playground/questions_demo'
-import { SummarySection } from '@/components/sections/playground/summarize'
+// import { SummarySection } from '@/components/sections/playground/summarize'
 import {
   ResizableHandle,
   ResizablePanel,
