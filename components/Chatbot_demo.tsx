@@ -1,5 +1,4 @@
 import { useState, useRef, useEffect } from "react"
-import axios from "axios";
 import { Button } from "@/components/ui/button"
 
 const ChatBot: React.FC = () => {
@@ -13,18 +12,11 @@ const ChatBot: React.FC = () => {
     setChatHistory((prev) => [...prev, { role: "user", content: userMessage }]);
 
     try {
-      // Realiza la petición al endpoint del backend
-      // const response = await axios.post("https://hero-ai-backend.onrender.com/chat/", {
-      //   user_question: userMessage,
-      // });
-      const response = await axios.post("http://localhost:8000/chat-test/", {
-        user_input: userMessage,
-      });
-
+      const response = "<think> Okay, the user just asked me about the model I'm based on. They previously asked who I am, and I introduced myself as a teaching and pedagogy assistant. Now they're digging deeper into my technical background. I should explain that I'm based on Llama, developed by Meta. It's important to mention that while I'm knowledgeable, I don't have consciousness or emotions. I need to keep it clear and concise, as per my previous responses. I'll make sure to highlight how my design focuses on understanding and generating human-like text, which is perfect for educational purposes. Also, I'll offer further assistance in case they have more questions. Keeping it friendly and approachable is key here. </think> Estoy basado en el modelo **LLaMA (Large Language Model Application)**, desarrollado por **Meta AI**. Aunque tengo una gran capacidad para entender y generar texto similar al de un ser humano, no poseo conciencia ni emociones. Mi función es ayudarte proporcionando información útil y precisa. ¿Te gustaría saber más sobre cómo funciono o cómo puedo ayudarte en específico? 😊"
       // Añade la respuesta del bot al historial
       setChatHistory((prev) => [
         ...prev,
-        { role: "bot", content: response.data.response },
+        { role: "bot", content: response },
       ]);
     } catch (error) {
       console.error("Error al comunicarse con el chatbot:", error);

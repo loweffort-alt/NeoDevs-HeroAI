@@ -11,6 +11,7 @@ import {
 import { Button } from '@/components/ui/button'
 import DocPreview from '@/components/doc-preview'
 import { useState } from 'react'
+import ChatBot from '@/components/Chatbot_demo'
 
 const DemoPlayground = () => {
   const [doc, setDoc] = useState(0)
@@ -66,7 +67,8 @@ const DemoPlayground = () => {
           </ResizablePanel>
           <ResizableHandle />
           <ResizablePanel>
-            <SummarySection currentPDF={doc} />
+            <ChatBot />
+            {/* <SummarySection currentPDF={doc} /> */}
           </ResizablePanel>
         </ResizablePanelGroup>
       </ResizablePanel>
